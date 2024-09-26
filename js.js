@@ -48,4 +48,16 @@ window.addEventListener('load', function() {
       navbar.style.visibility = 'visible';  
       navbar.style.opacity = '0.6';           
     }, 2200); 
+});
+
+window.addEventListener('load', function() {
+    setTimeout(function() {
+      const homeIcons = document.querySelectorAll('.home-icon a'); // Select all <a> tags in .home-icon
+
+      homeIcons.forEach(function(icon) {
+        icon.style.visibility = 'visible';  // Make the icons visible
+        icon.style.opacity = '1';           // Fade in the icons
+      });
+    }, 2000); // 2000 milliseconds = 2 seconds
   });
+
