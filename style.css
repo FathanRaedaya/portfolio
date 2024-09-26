@@ -166,10 +166,10 @@ opacity: 100%;
 }
 
 .cv-box:hover {
-	background-color: white;
+	background-color: #f6e0b5;
 	transition: ease-in-out .5s;
 	color: black;
-	border: 2px solid black;
+	border: 2px solid #51434b;
 }
 
 .cv-box:hover > a {
@@ -197,17 +197,17 @@ opacity: 100%;
 }
 
 @keyframes rotate {
-  0%  {margin-top: -8px;}
+  0%  {margin-top: -250px;}
   10% {margin-top: -8px;}
   20% {margin-top: -8px;}
-  30% {margin-top: -127px;}
-  40% {margin-top: -127px;}
+  30% {margin-top: -8px;}
+  40% {margin-top: -8px;}
   50% {margin-top: -127px;}
-  60% {margin-top: -250px;}
-  70% {margin-top: -250px;}
+  60% {margin-top: -127px;}
+  70% {margin-top: -127px;}
   80% {margin-top: -250px;}
-  90% {margin-top: -8px;}
-  100% {margin-top: -8px;}
+  90% {margin-top: -250px;}
+  100% {margin-top: -250px;}
 }
 
 
@@ -284,6 +284,8 @@ opacity: 100%;
 	text-align: left; 
 	padding-top: 15%;
 	letter-spacing: -2px;
+	font-weight: normal;
+
 }
 
 .about-text {
@@ -311,7 +313,7 @@ opacity: 100%;
 }
 
 .projects-container {
-	height: 60vh;
+	height: 80vh;
 	width: 50%;
 	margin-left: 25%;
 	margin-right: 25%;
@@ -325,22 +327,24 @@ opacity: 100%;
 	text-align: right; 
 	margin-top: 15%;
 	letter-spacing: -2px;
+	font-weight: normal;
 }
 
 .project-boxes {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
 	margin-top: 40px;
 }
 
 .project-box {	
 	height: 200px;
-	width: 450px;
+	width: auto;
 	background-color: #66545e;
 	border-radius: 30px;
 	padding: 40px;
-	margin: 0 5px;
+	margin: 10px 10px;
 	border: 2px solid #333333;
+	flex: 1;
 }
 
 .project-box h3 {
@@ -371,6 +375,11 @@ opacity: 100%;
 	margin-top: 50px;
 }
 
+.project-row {
+    display: flex;
+    justify-content: space-between;
+}
+
 .contact-container {
 	height: 10vh;
 	width: 50%;
@@ -384,8 +393,8 @@ opacity: 100%;
 	font-size: 20px;
 	color: white;
 	text-align: center; 
-	padding: 16px 0;
-	letter-spacing: -1px;
+	padding: 20px 0;
+	letter-spacing: -0.5px;
 }
 
 .contact-text2{
