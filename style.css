@@ -1,0 +1,283 @@
+* {
+	margin: 0px;
+	padding:  0px;
+}
+
+html {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #66545e;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #333333;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: white;
+}
+
+@font-face {
+	font-family: 'lmr';
+	src: url(fonts/lmr.otf);
+}
+
+@font-face {
+	font-family: 'mont';
+	src: url(fonts/mont.ttf);
+}
+
+@font-face {
+	font-family: 'montL';
+	src: url(fonts/montL.ttf);
+}
+
+@font-face {
+	font-family: 'montM';
+	src: url(fonts/montM.ttf);
+}
+
+#navbar {
+	opacity: 0; /* Make it fully transparent */
+	visibility: hidden; /* Ensure it's not interactive */
+	transition: opacity 1s ease; /* Smooth transition when showing */
+}
+
+nav {
+	position: fixed; 
+	top: 2%; 
+	left: 50%; 
+	transform: translateX(-50%); 
+	width: 80%; 
+	max-width: 600px; 
+	background-color: #a39193; 
+	padding: 10px; 
+	border: 2px solid black;
+	border-radius: 30px; 
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+	z-index: 1000; 
+	font-family: lmr, arial;
+	font-size: 12px;
+  }
+
+nav ul {
+	list-style: none; 
+	padding: 0;
+	margin: 0;
+	display: flex; 
+	justify-content: center; 
+}
+
+nav li {
+margin: 0 15px; 
+}
+
+nav a {
+text-decoration: none; 
+color: black;
+padding: 10px 20px;
+transition: 0.3s;
+}
+
+nav a:hover {
+color: black; 
+opacity: 100%;
+}
+  
+.container {
+	position: relative;
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+	background-color: #66545e;
+}
+
+.grey {
+	background-color: #f7f8fb;
+}
+
+.left-container {
+	position: relative;
+	top: 0;
+	left: 0;
+	min-width: 50%;
+	max-height: 100vh;
+}
+
+.first-line {
+	position: absolute;
+	top: 40%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+	font-family: lmr, arial;
+	font-size: 60px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	width: 100%
+}
+
+.p1 {
+	font-family: mont, arial;
+	font-size: 15px;
+	position: absolute;
+	top: 47.5%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+	color: white;
+	text-align: center;
+}
+
+.animate-main {
+  height: 60px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.animate-main div div {
+  padding: 15px 10px 15px 0px;
+  height: 60px;
+  margin-bottom: 50px;
+  display: inline-block;
+  color: #f6e0b5;
+}
+
+.animate-main div:first-child {
+  animation: rotate 7s infinite;
+}
+
+@keyframes rotate {
+  0% {margin-top: -10px;}
+  10% {margin-top: -10px;}
+  20% {margin-top: -10px;}
+  30% {margin-top: -130px;}
+  40% {margin-top: -130px;}
+  50% {margin-top: -255px;}
+  60% {margin-top: -255px;}
+  70% {margin-top: -130px;}
+  80% {margin-top: -130px;}
+  90% {margin-top: -10px;}
+  100% {margin-top: -10px;}
+}
+
+.contact-box {
+	border: 4px solid black;
+	font-family: mont, arial;
+	font-size: 20px;
+	position: absolute;
+	top: 55%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	border-radius: 15px 15px 15px 15px;
+	background-color: black;
+	color: white;
+	z-index: 1;
+}
+
+.right-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 50%;
+  }
+  
+  .myimg {
+	max-width: 100%;
+	height: auto;
+	width: 500px; 
+	border-radius: 15px 15px 15px 15px;
+  }
+
+.introduction {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #66545e;
+	transition: 1s;
+}
+
+.intro-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-family: mont, arial;
+	font-size: 500%;
+}
+
+.loading {
+	position: relative;
+	display: inline-block;
+	bottom: -20px;
+	opacity: 0;
+	padding: 10px;
+}
+
+.loading.in {
+	bottom: 0;
+	opacity: 1;
+	transition: ease-in-out 0.5s;
+}
+
+.loading.out {
+	bottom: 150px;
+	opacity: 0;
+	transition: ease-in-out 0.5s;
+}
+
+@keyframes floating {
+	0% {transform: translateY(0px);}
+	50% {transform: translateY(10px);}
+	100% {transform: translateY(0px);}
+}
+
+.opacity:hover {
+	opacity: 0.5;
+	transition: ease-in 0.3s;
+}
+
+.fill:hover {
+	background-color: white;
+	color: white;
+	transition: 0.3s;
+}
+
+.about-heading {
+	font-family: montM, arial;
+	font-size: 70px;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	letter-spacing: -2px;
+	color: white;
+}
+
+.about-text {
+	font-family: montM, arial;
+	font-size: 20px;
+	max-width: 40%;
+	position: absolute;
+	top: 30%;
+	left: 20%;
+	margin-top: 10px;
+	text-align: justify;
+}
+
+
+
+
