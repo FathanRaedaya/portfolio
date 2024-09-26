@@ -4,7 +4,7 @@
 }
 
 body {
-	background-color: #66545e;
+	background-color: #51434b;
 }
 
 html {
@@ -112,13 +112,14 @@ opacity: 100%;
 }
 
 .first-line {
-	font-family: lmr, arial;
+	font-family: it, arial;
 	font-size: 60px;
 	font-weight: bold;
 	color: white;
 	text-align: center;
 	width: 100%;
 	padding-top: 20%;
+	letter-spacing: 1px;
 }
 
 .p1 {
@@ -180,6 +181,7 @@ opacity: 100%;
   height: 65px;
   overflow: hidden;
   display: inline-block;
+  font-family: lmr, arial;
 }
 
 .animate-main div div {
@@ -300,7 +302,7 @@ opacity: 100%;
 	border-radius: 30px;
 	float: right; 
 	margin-left: 20px; /* Space between the text and image */
-
+	margin-top: 20px;
   }
   
 
@@ -309,7 +311,7 @@ opacity: 100%;
 }
 
 .projects-container {
-	height: 50vh;
+	height: 60vh;
 	width: 50%;
 	margin-left: 25%;
 	margin-right: 25%;
@@ -323,6 +325,76 @@ opacity: 100%;
 	text-align: right; 
 	margin-top: 15%;
 	letter-spacing: -2px;
+}
+
+.project-boxes {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+
+.project-box {	
+	height: 200px;
+	width: 450px;
+	background-color: #66545e;
+	border-radius: 30px;
+	padding: 40px;
+	margin: 0 5px;
+	border: 2px solid #333333;
+}
+
+.project-box h3 {
+	font-family: mont, arial;
+	font-size: 20px;
+	color: white;
+	font-weight: normal;
+}
+
+.project-box p {
+	font-family: montL, arial;
+	font-size: 16px;
+	color: white;
+	margin-top: 10px;
+	text-align: justify;
+	opacity: 0.9;
+}
+
+.project-lang {
+	font-family: montL, arial;
+	font-size: 16px;
+	color: white;
+	margin-top: 30px;
+	opacity: 0.65;
+}
+
+.git-icon {
+	margin-top: 50px;
+}
+
+.contact-container {
+	height: 10vh;
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	position: relative;
+}
+
+.contact-text {
+	font-family: it, arial;
+	font-size: 20px;
+	color: white;
+	text-align: center; 
+	padding: 16px 0;
+	letter-spacing: -1px;
+}
+
+.contact-text2{
+	font-family: montM, arial;
+	font-size: 12px;
+	color: white;
+	text-align: center;
+	padding-bottom: 10%;
+	opacity: 0.8;
 }
 
 

@@ -43,21 +43,29 @@ $(document).ready(function(){
 });
 
 window.addEventListener('load', function() {
-    setTimeout(function() {
-      const navbar = document.getElementById('navbar');
-      navbar.style.visibility = 'visible';  
-      navbar.style.opacity = '0.6';           
-    }, 2200); 
+	setTimeout(function() {
+	  const navbar = document.getElementById('navbar');
+	  navbar.style.visibility = 'visible';  
+	  navbar.style.opacity = '0.7'; 
+
+	  navbar.addEventListener('mouseover', function() {
+		navbar.style.opacity = '1';
+	  });
+
+	  navbar.addEventListener('mouseout', function() {
+		navbar.style.opacity = '0.7';
+	  });
+	}, 2200); 
 });
 
 window.addEventListener('load', function() {
     setTimeout(function() {
-      const homeIcons = document.querySelectorAll('.home-icon a'); // Select all <a> tags in .home-icon
+      const homeIcons = document.querySelectorAll('.home-icon a'); 
 
       homeIcons.forEach(function(icon) {
-        icon.style.visibility = 'visible';  // Make the icons visible
-        icon.style.opacity = '1';           // Fade in the icons
+        icon.style.visibility = 'visible';  
+        icon.style.opacity = '1';          
       });
-    }, 2000); // 2000 milliseconds = 2 seconds
+    }, 2500); 
   });
 
