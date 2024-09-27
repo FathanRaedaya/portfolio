@@ -313,7 +313,7 @@ opacity: 100%;
 }
 
 .projects-container {
-	height: 100vh;
+	height: 90vh;
 	width: 50%;
 	margin-left: 25%;
 	margin-right: 25%;
@@ -440,4 +440,85 @@ opacity: 100%;
 
 .fade-out {
     opacity: 0 !important;
+}
+
+@media (max-width: 600px) {
+
+	nav {
+		width: 75%; 
+		padding: 8px; 
+
+
+		font-size: 10px;
+	  }
+	
+	nav ul {
+		list-style: none; 
+		padding: 0;
+		margin: 0;
+		display: flex; 
+		justify-content: center; 
+	}
+	
+	nav li {
+	margin: 0 15px; 
+	}
+	
+	nav a {
+	text-decoration: none; 
+	color: white;
+	padding: 10px 20px;
+	transition: 0.3s;
+	}
+
+	.intro-text {
+		font-size: 300%;
+		text-align: center;
+	}
+
+	.first-line {
+		padding-top: 30%;
+		font-size: 200%;
+		width: 100%;
+		text-align: center;
+	}
+
+	.p1 {
+		font-size: 12px;
+		padding-top: 15px;
+		width: 70%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.animate-main {
+		height: 35px;
+	}
+	  
+	  .animate-main div div {
+		padding: 15px 10px 15px 0px;
+		height: 60px;
+		margin-bottom: 50px;
+		display: inline-block;
+		color: #f6e0b5;
+	  }
+	  
+	  .animate-main div:first-child {
+		animation: rotate 7s infinite;
+	  }
+	  
+	  @keyframes rotate {
+		0%  {margin-top: -250px;}
+		10% {margin-top: -8px;}
+		20% {margin-top: -8px;}
+		30% {margin-top: -8px;}
+		40% {margin-top: -8px;}
+		50% {margin-top: -127px;}
+		60% {margin-top: -127px;}
+		70% {margin-top: -127px;}
+		80% {margin-top: -250px;}
+		90% {margin-top: -250px;}
+		100% {margin-top: -250px;}
+	  }
+
 }
