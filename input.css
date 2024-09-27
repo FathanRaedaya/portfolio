@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 ::-webkit-scrollbar {
 	width: 10px;
 }
@@ -133,6 +131,4 @@ color: #f6e0b5;
 	letter-spacing: .3px;
 	font-family: montL, arial;
 }
-
-
 

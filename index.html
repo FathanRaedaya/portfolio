@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="output.css">
-    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
     <title>fnr</title>
 </head>
 <body class="bg-customBackground">
@@ -21,7 +20,7 @@
 
     <main>
         <section class="introduction fixed z-[100] top-0 left-0 w-full h-screen bg-[#66545e] transition-all duration-1000">
-            <h1 class="intro-text font-[it] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-[500%]">
+            <h1 class="intro-text font-[mont] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-[500%] tracking-[-5px]">
                 <span class="loading relative inline-block -bottom-[20px] opacity-0 p-2.5">Hello</span><span class="loading relative inline-block -bottom-[20px] opacity-0 p-2.5">World !</span>
             </h1>
         </section>
@@ -73,38 +72,51 @@
 			<h2 class="projects-heading font-[it] text-[40px] text-white text-right pt-[15%] tracking-[-2px] font-normal"><span class="small">02 </span>my <span class="text-customBeige">projects</span></h2>
 			<div class="project-boxes flex flex-col mt-[40px]">
 				<div class="project-row flex justify-between">
-					<article class="project-box h-[200px] bg-[#66545e] rounded-[30px] p-[40px] m-[10px] border-2 border-[#333333] flex-1">
+					<article class="project-box bg-[#66545e] rounded-[30px] p-[40px] m-[10px] border-2 border-[#333333] flex-1">
 						<h3 class="font-[mont] text-[20px] text-white font-normal">Website Portfolio</h3>
 						<p class="font-[montL] text-[16px] text-white mt-[10px] text-justify opacity-90">The website you are currently browsing, built to showcase projects and learn about me.</p>
 						<div class="project-lang font-[montL] text-[16px] text-white mt-[30px] opacity-65">HTML, CSS, Javascript</div>
-						<a href="https://github.com/FathanRaedaya/portfolio"><img src="images/github.svg" alt="GitHub Icon" class="fadeout mt-[30px]"></a>
-						<a href=""><img src="images/live.svg" alt="Live Icon" class="fadeout"></a>
+						<div class="flex mt-[30px]">
+                            <a href="https://github.com/FathanRaedaya/portfolio">
+                                <img src="images/github.svg" alt="GitHub Icon" class="fadeout h-[30px]">
+                            </a>
+                        </div>
 					</article>
-					<article class="project-box h-[200px] bg-[#66545e] rounded-[30px] p-[40px] m-[10px] border-2 border-[#333333] flex-1">
+					<article class="project-box bg-[#66545e] rounded-[30px] p-[40px] m-[10px] border-2 border-[#333333] flex-1">
 						<h3 class="font-[mont] text-[20px] text-white font-normal">Budget Tracker</h3>
-						<p class="font-[montL] text-[16px] text-white mt-[10px] text-justify opacity-90">A simple website to track your income and expenses.</p>
+						<p class="font-[montL] text-[16px] text-white mt-[10px] text-justify opacity-90">A simple website to track your income and expenses, using Flask's database.</p>
 						<div class="project-lang font-[montL] text-[16px] text-white mt-[30px] opacity-65">Python (Flask), HTML, CSS, Javascript</div>
-						<a href="https://github.com/FathanRaedaya/budget-tracker"><img src="images/github.svg" alt="GitHub Icon" class="fadeout mt-[30px]"></a>
+						<div class="flex mt-[30px]">
+                            <a href="https://github.com/FathanRaedaya/budget-tracker">
+                                <img src="images/github.svg" alt="GitHub Icon" class="fadeout h-[30px]">
+                            </a>
+                        </div>
 					</article>
 				</div>
 				<div class="project-row flex justify-between">
-					<article class="project-box h-[200px] bg-[#66545e] rounded-[30px] p-[40px] m-[10px] border-2 border-[#333333] flex-1">
+					<article class="project-box bg-[#66545e] rounded-[30px] p-[40px] m-[10px] border-2 border-[#333333] flex-1">
 						<h3 class="font-[mont] text-[20px] text-white font-normal">E-commerce website</h3>
 						<p class="font-[montL] text-[16px] text-white mt-[10px] text-justify opacity-90">A website prototype of an e-commerce shop </p>
 						<div class="project-lang font-[montL] text-[16px] text-white mt-[30px] opacity-65">HTML, CSS, Javascript</div>
-						<a href="https://github.com/FathanRaedaya/e-commerce-prototype"><img src="images/github.svg" alt="GitHub Icon" class="fadeout mt-[30px]"></a>
-						<a href="#"><img src="images/live.svg" alt="Live Icon" class="fadeout"></a>
+						<div class="flex mt-[30px]">
+                            <a href="https://github.com/FathanRaedaya/e-commerce-prototype">
+                                <img src="images/github.svg" alt="GitHub Icon" class="fadeout h-[30px]">
+                            </a>
+                        </div>
 					</article>
-					<article class="project-box h-[200px] bg-[#66545e] rounded-[30px] p-[40px] m-[10px] border-2 border-[#333333] flex-1">
+					<article class="project-box bg-[#66545e] rounded-[30px] p-[40px] m-[10px] border-2 border-[#333333] flex-1">
 						<h3 class="font-[mont] text-[20px] text-white font-normal">Predator-prey model</h3>
 						<p class="font-[montL] text-[16px] text-white mt-[10px] text-justify opacity-90">Used the Lotka-Volterra equations to define a predator-prey model to show simulations of methods: Euler, Heun and Runge-Kutta.</p>
 						<div class="project-lang font-[montL] text-[16px] text-white mt-[30px] opacity-65">Python</div>
-						<a href="https://github.com/FathanRaedaya/Predator-Prey-Model/blob/main/numcomp.ipynb"><img src="images/github.svg" alt="GitHub Icon" class="fadeout mt-[30px]"></a>
+						<div class="flex mt-[30px]">
+                            <a href="https://github.com/FathanRaedaya/predator-prey-model">
+                                <img src="images/github.svg" alt="GitHub Icon" class="fadeout h-[30px]">
+                            </a>
+                        </div>
 					</article>
 				</div>
 			</div>
 		</section>
-		
 
         <section class="contact-container h-[20vh] w-1/2 mx-auto relative" id="contact">
 			<p class="contact-text font-[it] text-[20px] text-white text-center pt-[15%] pb-[10px] tracking-[-0.5px]"><span class="text-customBeige">Contact</span> me via email at <span class="text-customBeige">fathanraedaya@gmail.com</span> for all inquiries.</p>
