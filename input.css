@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #66545e;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #333333;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: white;
+}
+
+@font-face {
+	font-family: 'it';
+	src: url(fonts/it.ttf);
+}
+
+@font-face {
+	font-family: 'lmr';
+	src: url(fonts/lmr.otf);
+}
+
+@font-face {
+	font-family: 'mont';
+	src: url(fonts/mont.ttf);
+}
+
+@font-face {
+	font-family: 'montL';
+	src: url(fonts/montL.ttf);
+}
+
+@font-face {
+	font-family: 'montM';
+	src: url(fonts/montM.ttf);
+}
+
+.opacity:hover {
+	opacity: 0.5;
+	transition: ease-in 0.3s;
+}
+
+.animate-main {
+    height: 65px;
+    overflow: hidden;
+    display: inline-block;
+    font-family: lmr, arial;
+}
+  
+.animate-main div div {
+padding: 15px 10px 15px 0px;
+height: 60px;
+margin-bottom: 50px;
+display: inline-block;
+color: #f6e0b5;
+}
+
+.animate-main div:first-child {
+    animation: rotate 7s infinite;
+}
+  
+@keyframes rotate {
+0%  {margin-top: -250px;}
+10% {margin-top: -8px;}
+20% {margin-top: -8px;}
+30% {margin-top: -8px;}
+40% {margin-top: -8px;}
+50% {margin-top: -127px;}
+60% {margin-top: -127px;}
+70% {margin-top: -127px;}
+80% {margin-top: -250px;}
+90% {margin-top: -250px;}
+100% {margin-top: -250px;}
+}
+
+.loading.in {
+	bottom: 0;
+	opacity: 1;
+	transition: ease-in-out 0.5s;
+}
+
+.loading.out {
+	bottom: 150px;
+	opacity: 0;
+	transition: ease-in-out 0.5s;
+}
+
+.fadeout:hover {
+	opacity: 0.5;
+	transition: 0.3s;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0) translateX(-50%);
+    }
+    40% {
+        transform: translateY(-30px) translateX(-50%);
+    }
+    60% {
+        transform: translateY(-15px) translateX(-50%);
+    }
+}
+
+.fade-out {
+    opacity: 0 !important;
+}
+
+.about-text {
+	font-family: montL, arial;
+	font-size: 16px;
+	color: white;
+	max-width: 60%;
+	margin-top: 20px;
+	text-align: justify;
+	overflow: hidden; 
+    letter-spacing: -.5px;
+}
+
+.small {
+	font-size: 18px;
+	letter-spacing: .3px;
+	font-family: montL, arial;
+}
+
+
+

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="overflow-x-hidden overflow-y-scroll scroll-smooth" lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -7,107 +7,108 @@
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
     <title>fnr</title>
 </head>
-<body>
+<body class="bg-customBackground">
     <header>
-        <nav id="navbar">
-            <ul>
-                <li><a href="#home" class="nav-home opcaity">Home</a></li>
-                <li><a href="#about" class="nav-about opacity">About</a></li>
-                <li><a href="#projects" class="nav-projects opacity">Projects</a></li>
-                <li><a href="#contact" class="nav-contact opacity">Contact</a></li>
+        <nav id="navbar" class="opacity-0 invisible transition-opacity duration-1000 ease-linear fixed top-[2%] left-1/2 -translate-x-1/2 w-4/5 max-w-[600px] bg-[#a39193] p-2.5 border-2 border-black rounded-[30px] shadow-md z-[1000] font-[mont] text-[12px]">
+            <ul class="list-none p-0 m-0 flex justify-center">
+                <li class="mx-4"><a href="#home" class="no-underline text-white py-2.5 px-5 transition duration-300 opacity">Home</a></li>
+                <li class="mx-4"><a href="#about" class="no-underline text-white py-2.5 px-5 transition duration-300 opacity">About</a></li>
+                <li class="mx-4"><a href="#projects" class="no-underline text-white py-2.5 px-5 transition duration-300 opacity">Projects</a></li>
+                <li class="mx-4"><a href="#contact" class="no-underline text-white py-2.5 px-5 transition duration-300 opacity">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="introduction">
-            <h1 class="intro-text">
-                <span class="loading">Hello</span><span class="loading">World !</span>
+        <section class="introduction fixed z-[100] top-0 left-0 w-full h-screen bg-[#66545e] transition-all duration-1000">
+            <h1 class="intro-text font-[it] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-[500%]">
+                <span class="loading relative inline-block -bottom-[20px] opacity-0 p-2.5">Hello</span><span class="loading relative inline-block -bottom-[20px] opacity-0 p-2.5">World !</span>
             </h1>
         </section>
 
-        <section class="container" id="home">
-            <h2 class="first-line">Hi, it's 
+        <section class="h-screen w-screen" id="home">
+            <h2 class="font-[it] text-[60px] font-bold text-white text-center w-full pt-[20%] tracking-[1px]">Hi, it's 
                 <div class="animate-main">
                     <div><div>"Fathan"</div></div>
                     <div><div>Naufal</div></div>
                     <div><div>Raedaya</div></div>
                 </div>
             </h2>
-            <p class="p1">I'm a final year computer science student at the University of Leeds going to pursue a Master's degree.</p>
-            <div class="home-icon">
-                <a href="https://www.linkedin.com/in/fathan-raedaya-9559a3227/"><img src="images/linkedin.svg" alt="LinkedIn Icon" class="fadeout"></a>
-                <a href="https://github.com/FathanRaedaya"><img src="images/github.svg" alt="GitHub Icon" class="fadeout"></a>
-                <a href="FathanRaedayaCV.pdf" class="cv-box" download>Download CV</a>
+            <p class="font-[montM] text-[15px] text-white text-center pt-2.5">I'm a final year computer science student at the University of Leeds going to pursue a Master's degree.</p>
+            <div class="home-icon flex justify-center items-center mt-5">
+                <a href="https://www.linkedin.com/in/fathan-raedaya-9559a3227/" class="mx-2.5 opacity-0 invisible transition-opacity duration-1000"><img src="images/linkedin.svg" alt="LinkedIn Icon" class="fadeout"></a>
+                <a href="https://github.com/FathanRaedaya" class="mx-2.5 opacity-0 invisible transition-opacity duration-1000"><img src="images/github.svg" alt="GitHub Icon" class="fadeout"></a>
+                <a href="FathanRaedayaCV.pdf" class="cv-box font-[mont] max-w-[200px] h-[35px] px-3.5 border-2 border-white rounded-full flex justify-center items-center mx-2.5 text-white text-[12px] no-underline
+                                                     hover:bg-[#f6e0b5] transition ease-in-out duration-500 hover:text-black hover:border-[#51434b]" download>Download CV</a>
             </div>
         </section>
 
-        <div id="scroll-arrow" class="scroll-arrow">
+        <div id="scroll-arrow" class="scroll-arrow fixed bottom-[30px] left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer z-[1000] opacity-100 transition-opacity duration-500 ease-in-out text-white">
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </div>
 
-        <section class="about-container" id="about">
-            <h2 class="about-heading"><span class="small">01 </span>about <span class="beige">me</span></h2>
-            <img src="images/me1.jpg" alt="Fathan Raedaya picture" class="portrait">
+        <section class="about-container h-[50vh] w-1/2 mx-auto relative" id="about">
+            <h2 class="about-heading font-[it] text-[40px] text-white text-left pt-[10%] tracking-[-2px] font-normal"><span class="small">01 </span>about <span class="text-customBeige">me</span></h2>
+            <img src="images/me1.jpg" alt="Fathan Raedaya picture" class="portrait max-w-[300px] max-h-[300px] rounded-[30px] float-right ml-5 mt-5">
             <p class="about-text">
-                I am a final year student at the <span class="beige">University of Leeds</span> undertaking a Bachelor's of Science in Computer Science,
+                I am a final year student at the <span class="text-customBeige">University of Leeds</span> undertaking a Bachelor's of Science in Computer Science,
                 currently maintaining a 2:1.
                 I am passionate of becoming a software engineer and currently have experience in web development and .
             </p>
             <p class="about-text">
-                I have studied through modules such as <span class="beige">Discrete Mathematics, Artificial Intelligence, Object-orientated & Procedural programming</span> and more that you can see through my CV.
+                I have studied through modules such as <span class="text-customBeige">Discrete Mathematics, Artificial Intelligence, Object-orientated & Procedural programming</span> and more that you can see through my CV.
                 I am currently deciding on my next steps after graduation whether to pursue a master's degree or look for a graduate role.
             </p>
             <p class="about-text">
-                Some technologies I have worked with are: <span class="beige">Python, Java, JavaScript, Flask, C</span>
+                Some technologies I have worked with are: <span class="text-customBeige">Python, Java, JavaScript, Flask, C</span>
             </p>
             <p class="about-text">
                 Outside of my studies, I enjoy watching football, playing video games and exercising.
             </p>
         </section>
 
-        <section class="projects-container" id="projects">
-			<h2 class="projects-heading"><span class="small">02 </span>my <span class="beige">projects</span></h2>
-			<div class="project-boxes">
-				<div class="project-row">
-					<article class="project-box">
-						<h3>Website Portfolio</h3>
-						<p>The website you are currently browsing, built to showcase projects and learn about me.</p>
-						<div class="project-lang">HTML, CSS, Javascript</div>
-						<a href="https://github.com/FathanRaedaya/portfolio"><img src="images/github.svg" alt="GitHub Icon" class="fadeout git-icon"></a>
+        <section class="projects-container h-[90vh] w-1/2 mx-auto relative" id="projects">
+			<h2 class="projects-heading font-[it] text-[40px] text-white text-right pt-[15%] tracking-[-2px] font-normal"><span class="small">02 </span>my <span class="text-customBeige">projects</span></h2>
+			<div class="project-boxes flex flex-col mt-[40px]">
+				<div class="project-row flex justify-between">
+					<article class="project-box h-[200px] bg-[#66545e] rounded-[30px] p-[40px] m-[10px] border-2 border-[#333333] flex-1">
+						<h3 class="font-[mont] text-[20px] text-white font-normal">Website Portfolio</h3>
+						<p class="font-[montL] text-[16px] text-white mt-[10px] text-justify opacity-90">The website you are currently browsing, built to showcase projects and learn about me.</p>
+						<div class="project-lang font-[montL] text-[16px] text-white mt-[30px] opacity-65">HTML, CSS, Javascript</div>
+						<a href="https://github.com/FathanRaedaya/portfolio"><img src="images/github.svg" alt="GitHub Icon" class="fadeout mt-[30px]"></a>
 						<a href=""><img src="images/live.svg" alt="Live Icon" class="fadeout"></a>
 					</article>
-					<article class="project-box">
-						<h3>Budget Tracker</h3>
-						<p>A simple website to track your income and expenses.</p>
-						<div class="project-lang">Python (Flask), HTML, CSS, Javascript</div>
-						<a href="https://github.com/FathanRaedaya/budget-tracker"><img src="images/github.svg" alt="GitHub Icon" class="fadeout git-icon"></a>
+					<article class="project-box h-[200px] bg-[#66545e] rounded-[30px] p-[40px] m-[10px] border-2 border-[#333333] flex-1">
+						<h3 class="font-[mont] text-[20px] text-white font-normal">Budget Tracker</h3>
+						<p class="font-[montL] text-[16px] text-white mt-[10px] text-justify opacity-90">A simple website to track your income and expenses.</p>
+						<div class="project-lang font-[montL] text-[16px] text-white mt-[30px] opacity-65">Python (Flask), HTML, CSS, Javascript</div>
+						<a href="https://github.com/FathanRaedaya/budget-tracker"><img src="images/github.svg" alt="GitHub Icon" class="fadeout mt-[30px]"></a>
 					</article>
 				</div>
-				<div class="project-row">
-					<article class="project-box">
-						</p><h3>E-commerce website</h3>
-						<p>A website prototype of an e-commerce shop </p>
-						<div class="project-lang">HTML, CSS, Javascript</div>
-						<a href="https://github.com/FathanRaedaya/e-commerce-prototype"><img src="images/github.svg" alt="GitHub Icon" class="fadeout git-icon"></a>
+				<div class="project-row flex justify-between">
+					<article class="project-box h-[200px] bg-[#66545e] rounded-[30px] p-[40px] m-[10px] border-2 border-[#333333] flex-1">
+						<h3 class="font-[mont] text-[20px] text-white font-normal">E-commerce website</h3>
+						<p class="font-[montL] text-[16px] text-white mt-[10px] text-justify opacity-90">A website prototype of an e-commerce shop </p>
+						<div class="project-lang font-[montL] text-[16px] text-white mt-[30px] opacity-65">HTML, CSS, Javascript</div>
+						<a href="https://github.com/FathanRaedaya/e-commerce-prototype"><img src="images/github.svg" alt="GitHub Icon" class="fadeout mt-[30px]"></a>
 						<a href="#"><img src="images/live.svg" alt="Live Icon" class="fadeout"></a>
 					</article>
-					<article class="project-box">
-						<h3>Predator-prey model</h3>
-						<p>Used the Lotka-Volterra equations to define a predator-prey model to show simulations of methods: Euler, Heun and Runge-Kutta.</p>
-						<div class="project-lang">Python</div>
-						<a href="https://github.com/FathanRaedaya/Predator-Prey-Model/blob/main/numcomp.ipynb"><img src="images/github.svg" alt="GitHub Icon" class="fadeout git-icon"></a>
+					<article class="project-box h-[200px] bg-[#66545e] rounded-[30px] p-[40px] m-[10px] border-2 border-[#333333] flex-1">
+						<h3 class="font-[mont] text-[20px] text-white font-normal">Predator-prey model</h3>
+						<p class="font-[montL] text-[16px] text-white mt-[10px] text-justify opacity-90">Used the Lotka-Volterra equations to define a predator-prey model to show simulations of methods: Euler, Heun and Runge-Kutta.</p>
+						<div class="project-lang font-[montL] text-[16px] text-white mt-[30px] opacity-65">Python</div>
+						<a href="https://github.com/FathanRaedaya/Predator-Prey-Model/blob/main/numcomp.ipynb"><img src="images/github.svg" alt="GitHub Icon" class="fadeout mt-[30px]"></a>
 					</article>
 				</div>
 			</div>
 		</section>
 		
 
-        <section class="contact-container" id="contact">
-			<p class="contact-text"><span class="beige">Contact</span> me via email at <span class="beige">fathanraedaya@gmail.com</span> for all inquiries.</p>
-            <p class="contact-text2">Designed and built by Fathan Raedaya</p>
+        <section class="contact-container h-[20vh] w-1/2 mx-auto relative" id="contact">
+			<p class="contact-text font-[it] text-[20px] text-white text-center pt-[15%] pb-[10px] tracking-[-0.5px]"><span class="text-customBeige">Contact</span> me via email at <span class="text-customBeige">fathanraedaya@gmail.com</span> for all inquiries.</p>
+            <p class="contact-text2 font-[montM] text-[12px] text-white text-center pb-[10%] opacity-80">Designed and built by Fathan Raedaya</p>
         </section>
     </main>
     
