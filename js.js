@@ -69,3 +69,51 @@ window.addEventListener('load', function() {
     }, 2500); 
   });
 
+  document.addEventListener('DOMContentLoaded', function() {
+    const scrollArrow = document.getElementById('scroll-arrow');
+    let isArrowVisible = false;
+    let hasScrolled = false;
+    
+    scrollArrow.style.display = 'none';
+    scrollArrow.style.opacity = '0';
+
+    function fadeInArrow() {
+        if (!isArrowVisible) {
+            scrollArrow.style.display = 'block';
+            setTimeout(() => {
+                scrollArrow.style.opacity = '1';
+                scrollArrow.classList.remove('fade-out');
+            }, 50);
+            isArrowVisible = true;
+        }
+    }
+
+    function fadeOutArrow() {
+        if (isArrowVisible) {
+            scrollArrow.classList.add('fade-out');
+            setTimeout(() => {
+                scrollArrow.style.display = 'none';
+            }, 500);
+            isArrowVisible = false;
+        }
+    }
+    setTimeout(fadeInArrow, 2000);
+
+    window.addEventListener('scroll', function() {
+        hasScrolled = true;
+        if (window.scrollY === 0) {
+            fadeInArrow();
+        } else {
+            fadeOutArrow();
+        }
+    });
+
+    scrollArrow.addEventListener('click', function() {
+        fadeOutArrow();
+        window.scrollBy({
+            top: window.innerHeight,
+            behavior: 'smooth'
+        });
+    });
+
+});
