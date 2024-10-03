@@ -21,27 +21,27 @@
 
 @font-face {
 	font-family: 'it';
-	src: url(fonts/it.ttf);
+	src: url(assets/fonts/it.ttf);
 }
 
 @font-face {
 	font-family: 'lmr';
-	src: url(fonts/lmr.otf);
+	src: url(assets/fonts/lmr.otf);
 }
 
 @font-face {
 	font-family: 'mont';
-	src: url(fonts/mont.ttf);
+	src: url(assets/fonts/mont.ttf);
 }
 
 @font-face {
 	font-family: 'montL';
-	src: url(fonts/montL.ttf);
+	src: url(assets/fonts/montL.ttf);
 }
 
 @font-face {
 	font-family: 'montM';
-	src: url(fonts/montM.ttf);
+	src: url(assets/fonts/montM.ttf);
 }
 
 .opacity:hover {
