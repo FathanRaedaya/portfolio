@@ -118,14 +118,6 @@ window.addEventListener('load', function() {
 
 });
 
-const budgetModalOverlay = document.getElementById('budgetModalOverlay');
-const budgetLearnMoreBtn = document.getElementById('budgetLearnMoreBtn');
-const budgetCloseModalBtn = document.getElementById('budgetCloseModalBtn');
-
-const typingModalOverlay = document.getElementById('typingModalOverlay');
-const typingLearnMoreBtn = document.getElementById('typingLearnMoreBtn');
-const typingCloseModalBtn = document.getElementById('typingCloseModalBtn');
-
 function toggleNavbarVisibility(hide) {
     const navbar = document.getElementById('navbar');
     if (hide) {
@@ -134,6 +126,14 @@ function toggleNavbarVisibility(hide) {
         navbar.style.visibility = 'visible';
     }
 }
+
+const budgetModalOverlay = document.getElementById('budgetModalOverlay');
+const budgetLearnMoreBtn = document.getElementById('budgetLearnMoreBtn');
+const budgetCloseModalBtn = document.getElementById('budgetCloseModalBtn');
+
+const typingModalOverlay = document.getElementById('typingModalOverlay');
+const typingLearnMoreBtn = document.getElementById('typingLearnMoreBtn');
+const typingCloseModalBtn = document.getElementById('typingCloseModalBtn');
 
 function openModal(modalOverlay) {
     modalOverlay.classList.add('active');
