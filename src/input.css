@@ -157,6 +157,7 @@ color: #99aab5;
 	.modal-scroll {
 		padding: 2rem;
 	}
+
 }
 
 @media (max-width: 1440px) {
@@ -203,7 +204,7 @@ color: #99aab5;
 
 	.projects-container {
         width: 90%;
-        height: 100vh;
+        height: 150vh;
         padding: 1.5rem;
     }
 
@@ -239,6 +240,10 @@ color: #99aab5;
 
 	.project-inside h3, .project-inside p {
 		font-size: 12px;
+	}
+
+	.intro-text {
+		font-size: 60px;
 	}
 }
 

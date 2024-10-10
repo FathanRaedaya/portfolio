@@ -721,8 +721,8 @@ video {
   height: 50vh;
 }
 
-.h-\[90vh\] {
-  height: 90vh;
+.h-\[75vh\] {
+  height: 75vh;
 }
 
 .h-full {
@@ -1432,7 +1432,7 @@ video {
 
   .projects-container {
     width: 90%;
-    height: 100vh;
+    height: 150vh;
     padding: 1.5rem;
   }
 
@@ -1467,6 +1467,10 @@ video {
 
   .project-inside h3, .project-inside p {
     font-size: 12px;
+  }
+
+  .intro-text {
+    font-size: 60px;
   }
 }
 
@@ -1520,6 +1524,10 @@ video {
 .hover\:text-gray-300:hover {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
 
 .group:hover .group-hover\:scale-90 {
