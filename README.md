@@ -1,6 +1,6 @@
 ## Fathan Raedaya  - web portfolio
 
-currently in progress but still accessible: https://fathanraedaya.github.io/portfolio/src/index.html
+currently in progress but still accessible: [fathanraedaya.com](https://fathanraedaya.com/)
 
 ![image](https://github.com/user-attachments/assets/118fe63e-ae08-42b7-b1fe-53065df7bdcc)
 
