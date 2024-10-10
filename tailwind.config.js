@@ -4,7 +4,7 @@ module.exports = {
     extend: {
       colors: {
         customBackground: '#51434b',
-        customBeige: '#f6e0b5',
+        customGrey: '#99aab5',
       },
     },
     fontFamily: {

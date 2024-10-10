@@ -6,9 +6,9 @@
     <link href="./src/output.css" rel="stylesheet">
     <title>fnr</title>
 </head>
-<body class="bg-customBackground">
+<body class="bg-[#23272a]">
     <header>
-        <nav id="navbar" class="opacity-0 invisible transition-opacity duration-1000 ease-linear fixed top-[2%] left-1/2 -translate-x-1/2 w-4/5 max-w-[600px] bg-[#a39193] p-1.5 border-2 border-black rounded-[30px] shadow-md z-[1000] font-mont text-[12px]">
+        <nav id="navbar" class="opacity-0 invisible transition-opacity duration-1000 ease-linear fixed top-[2%] left-1/2 -translate-x-1/2 w-4/5 max-w-[600px] bg-[#99aab5] p-1.5 border-2 border-black rounded-[30px] shadow-md z-[1000] font-mont text-[12px]">
             <ul class="list-none p-0 m-0 flex justify-center">
                 <li class="mx-4"><a href="#home" class="no-underline text-white py-2 px-5 transition duration-300 opacity">Home</a></li>
                 <li class="mx-4"><a href="#about" class="no-underline text-white py-2 px-5 transition duration-300 opacity">About</a></li>
@@ -19,7 +19,7 @@
     </header>
 
     <main>
-        <section class="introduction fixed z-[100] top-0 left-0 w-full h-screen bg-[#66545e] transition-all duration-1000">
+        <section class="introduction fixed z-[100] top-0 left-0 w-full h-screen bg-[#99aab5] transition-all duration-1000">
             <h1 class="intro-text font-mont absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-[500%] tracking-[-5px]">
                 <span class="loading relative inline-block -bottom-[20px] opacity-0 p-2.5">Hello</span><span class="loading relative inline-block -bottom-[20px] opacity-0 p-2.5">World !</span>
             </h1>
@@ -50,17 +50,17 @@
         </div>
 
         <section class="about-container h-[50vh] w-1/2 mx-auto relative" id="about">
-            <h2 class="about-heading font-it text-[40px] text-white text-left pt-[10%] tracking-[-2px] font-normal"><span class="small">01 </span><span class="text-customBeige">about </span>me</h2>
+            <h2 class="about-heading font-it text-[40px] text-white text-left pt-[10%] tracking-[-2px] font-normal"><span class="small">01 </span><span class="text-customGrey">about </span>me</h2>
             <img src="src/assets/images/me1.jpg" alt="Fathan Raedaya picture" class="portrait max-w-[300px] max-h-[300px] rounded-[30px] float-right ml-5 mt-5">
             <p class="about-text">
-                I am a final year student at the <span class="text-customBeige">University of Leeds</span> undertaking a Bachelor's of Science in Computer Science.
-                I am passionate about designing and developing software applications and websites and that is what I plan to research for my final year project.
+                I am a final year student at the <span class="text-customGrey">University of Leeds</span> undertaking a Bachelor's of Science in Computer Science.
+                I am passionate about designing and developing software applications and websites which is what I plan to research for my final year project.
             </p>
             <p class="about-text">
-                I am currently deciding on my next steps after graduation whether to pursue a master's degree or look for a graduate role. Whichever path I choose, I am excited to continue learning and developing my skills.
+                I am currently deciding on my next steps after graduation whether to pursue a master's degree or look for a graduate role. Whichever path I choose, I am excited to continue learning and broaden my knowledge in the field.
             </p>
             <p class="about-text">
-                Some technologies I have worked with are: <span class="text-customBeige">Python, Java, JavaScript, Flask, C</span>
+                Some technologies I have worked with are: <span class="text-customGrey">Python, Java, JavaScript, Flask, C</span>
             </p>
             <p class="about-text">
                 Outside of my studies, I enjoy watching a lot football, playing video games and travelling.
@@ -68,51 +68,203 @@
         </section>
 
         <section class="projects-container h-[90vh] w-1/2 mx-auto relative" id="projects">
-			<h2 class="projects-heading font-it text-[40px] text-white text-right pt-[15%] tracking-[-2px] font-normal"><span class="small">02 </span>my <span class="text-customBeige">projects</span></h2>
+			<h2 class="projects-heading font-it text-[40px] text-white text-right pt-[15%] tracking-[-2px] font-normal"><span class="small">02 </span>my <span class="text-customGrey">projects</span></h2>
 			<div class="project-boxes flex flex-col mt-[40px]">
 				<div class="project-row flex justify-between">
-                    <article class="relative overflow-hidden bg-[#66545e] rounded-[30px] border-2 border-[#333333] flex-1 h-[300px] group m-[10px]">
+                    <article class="relative overflow-hidden bg-[#99aab5] rounded-[30px] border-2 border-[#333333] flex-1 h-[300px] group m-[10px]">
                         <img src="src/assets/images/budget-tracker.png" alt="Project Image" class="project-image w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-90">
-                        <div class="project-inside absolute inset-0 bg-[#66545e] bg-opacity-98 flex flex-col justify-center p-[40px] opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 rounded-[30px]">
+                        <div class="project-inside absolute inset-0 bg-[#99aab5] bg-opacity-98 flex flex-col justify-center p-[40px] opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 rounded-[30px]">
                             <h3 class="font-mont text-[20px] text-white font-normal">Budget Tracker</h3>
-                            <p class="font-montL text-[16px] text-white mt-[10px] text-justify opacity-90">
+                            <p class="font-montM text-[16px] text-white mt-[10px] text-justify opacity-90">
                                 A simple website to track your income and expenses, using Flask's database.
                             </p>
-                            <div class="font-montL text-[16px] text-white mt-[30px] opacity-65">
-                                Python (Flask), HTML, CSS, Javascript                            </div>
+                            <div class="font-montM text-[16px] text-white mt-[30px] opacity-65">
+                                Python (Flask), HTML, CSS, JavaScript
+                            </div>
                             <div class="flex mt-[30px]">
                                 <a href="https://github.com/FathanRaedaya/budget-tracker">
                                     <img src="src/assets/images/github.svg" alt="GitHub Icon" class="h-[30px]">
                                 </a>
+                                <button id="budgetLearnMoreBtn" class="ml-auto">
+                                    <p class="font-montM text-white none hover:text-gray-300">Learn more</p>
+                                </button>
                             </div>
                         </div>
+                        <div id="budgetModalOverlay" class="font-montL modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+                            <div class="modal-content w-full max-h-[90vh] sm:max-w-[1000px] bg-gray-800 text-white rounded-xl mx-4">
+                                <div class="p-24 modal-scroll overflow-y-auto max-h-[90vh]">
+                                  <div class="flex justify-between items-center mb-4">
+                                    <h2 class="text-2xl font-bold">Budget Tracker</h2>
+                                    <button id="budgetCloseModalBtn" class="p-2 hover:bg-gray-700 rounded-full">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 6L6 18M6 6l12 12"/>
+                                      </svg>
+                                    </button>
+                                  </div>
+                                  
+                                  <div class="space-y-6">
+                                    <p class="text-lg">A website to keep track of your income and expenses with a goal to reach.
+                                  </p>
+                                    </p>
+                                    
+                                    <div class="w-full max-w-2xl mx-auto rounded-xl overflow-hidden bg-gray-900">
+                                      <video 
+                                        class="w-full aspect-video object-cover" 
+                                        autoplay 
+                                        loop 
+                                        muted 
+                                        playsinline
+                                      >
+                                        <source src="src/assets/videos/budget-tracker.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                      </video>
+                                    </div>
+                          
+                                    <div>
+                                      <h3 class="text-xl font-semibold mb-3">Key Features:</h3>
+                                      <ul class="list-disc pl-6 space-y-2">
+                                        <li>Add income</li>
+                                        <li>Track expenses</li>
+                                        <li>Edit the income and outgoings</li>
+                                        <li>Add a goal to reach</li>
+                                      </ul>
+                                    </div>
+                                    
+                                    <div>
+                                      <h3 class="text-xl font-semibold mb-3">Tech Stack:</h3>
+                                      <ul class="list-disc pl-6 space-y-2">
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                        <li>Flask</li>
+                                        <li>SQLite</li>
+                                      </ul>
+                                    </div>
+                          
+                                    <div>
+                                      <h3 class="text-xl font-semibold mb-3">How It Works:</h3>
+                                      <p class="text-gray-300">
+                                        Users can choose from various difficulty levels to practice their typing skills.
+                                        The application provides real-time feedback on typing speed, accuracy, and mistakes.
+                                      </p>
+                                    </div>
+
+                                    <div>
+                                      <h3 class="text-xl font-semibold mb-3">Explore:</h3>
+                                      <p class="text-gray-300">
+                                          Check out the 
+                                          <a href="https://github.com/FathanRaedaya/typing-test" class="text-white hover:cursor-pointer">GitHub repository</a>
+                                          to see how I built it over time.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
                     </article>
-                    <article class="relative overflow-hidden bg-[#66545e] rounded-[30px] border-2 border-[#333333] flex-1 h-[300px] group m-[10px]">
+                    <article class="relative overflow-hidden bg-[#99aab5] rounded-[30px] border-2 border-[#333333] flex-1 h-[300px] group m-[10px]">
                         <img src="src/assets/images/gettyping.png" alt="Project Image" class="project-image w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-90">
-                        <div class="project-inside absolute inset-0 bg-[#66545e] bg-opacity-98 flex flex-col justify-center p-[40px] opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 rounded-[30px]">
+                        <div class="project-inside absolute inset-0 bg-[#99aab5] bg-opacity-98 flex flex-col justify-center p-[40px] opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 rounded-[30px]">
                             <h3 class="font-mont text-[20px] text-white font-normal">GetTyping</h3>
-                            <p class="font-montL text-[16px] text-white mt-[10px] text-justify opacity-90">
+                            <p class="font-montM text-[16px] text-white mt-[10px] text-justify opacity-90">
                                 A website to test your typing speed.
                             </p>
-                            <div class="font-montL text-[16px] text-white mt-[30px] opacity-65">
-                                HTML, TailwindCSS, Javascript                            </div>
+                            <div class="font-montM text-[16px] text-white mt-[30px] opacity-65">
+                                HTML, TailwindCSS, Javascript                            
+                            </div>
                             <div class="flex mt-[30px]">
-                                <a href="https://github.com/FathanRaedaya/typing-speed-test">
+                                <a href="https://github.com/FathanRaedaya/typing-test">
                                     <img src="src/assets/images/github.svg" alt="GitHub Icon" class="h-[30px]">
                                 </a>
                                 <a href="https://fathanraedaya.github.io/typing-test/src/index.html">
                                     <img src="src/assets/images/live.svg" alt="Live Icon" class="h-[30px] ml-[10px]">
                                 </a>
+                                <button id="typingLearnMoreBtn" class="ml-auto">
+                                    <p class="font-montM text-white none hover:text-gray-300">Learn more</p>
+                                </button>
                             </div>
-                        </div>
+                            <div id="typingModalOverlay" class="font-montL modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+                                <div class="modal-content w-full max-h-[90vh] sm:max-w-[1000px] bg-gray-800 text-white rounded-xl mx-4">
+                                    <div class="p-24 modal-scroll overflow-y-auto max-h-[90vh]">
+                                      <div class="flex justify-between items-center mb-4">
+                                        <h2 class="text-2xl font-bold">Get Typing</h2>
+                                        <button id="typingCloseModalBtn" class="p-2 hover:bg-gray-700 rounded-full">
+                                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M18 6L6 18M6 6l12 12"/>
+                                          </svg>
+                                        </button>
+                                      </div>
+                                      
+                                      <div class="space-y-6">
+                                        <p class="text-lg">A website to test and improve your typing speed. Built with HTML, Tailwind CSS and JavaScript this project was
+                                          a way to familiarise myself with deploying a website for the first time. The website provides real-time feedback on typing speed.
+                                          While this project is still in the works, it is still accessible for anyone to use.</p>
+                                          
+                                      
+                                        
+                                        <div class="w-full max-w-2xl mx-auto rounded-xl overflow-hidden bg-gray-900">
+                                          <video 
+                                            class="w-full aspect-video object-cover" 
+                                            autoplay 
+                                            loop 
+                                            muted 
+                                            playsinline
+                                          >
+                                            <source src="src/assets/videos/gettyping.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                          </video>
+                                        </div>
+                              
+                                        <div>
+                                          <h3 class="text-xl font-semibold mb-3">Key Features:</h3>
+                                          <ul class="list-disc pl-6 space-y-2">
+                                            <li>Real-time WPM calculation</li>
+                                            <li>Accuracy tracking</li>
+                                            <li>Multiple text difficulties</li>
+                                            <li>Progress statistics</li>
+                                          </ul>
+                                        </div>
+                                        
+                                        <div>
+                                          <h3 class="text-xl font-semibold mb-3">Tech Stack:</h3>
+                                          <ul class="list-disc pl-6 space-y-2">
+                                            <li>HTML</li>
+                                            <li>Tailwind CSS</li>
+                                            <li>JavaScript</li>
+                                            <li>SQLite</li>
+                                          </ul>
+                                        </div>
+                              
+                                        <div>
+                                          <h3 class="text-xl font-semibold mb-3">How It Works:</h3>
+                                          <p class="text-gray-300">
+                                            Users can choose from various difficulty levels to practice their typing skills.
+                                            The application provides real-time feedback on typing speed, accuracy, and mistakes.
+                                          </p>
+                                        </div>
+  
+                                        <div>
+                                          <h3 class="text-xl font-semibold mb-3">Explore:</h3>
+                                          <p class="text-gray-300">
+                                              Check out the 
+                                              <a href="https://github.com/FathanRaedaya/typing-test" class="text-white hover:cursor-pointer">GitHub repository</a>
+                                              to see how I built it over time and visit the website
+                                              <a href="https://fathanraedaya.github.io/typing-test/src/index.html" class="text-white hover:cursor-pointer">here</a>.
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
                     </article>
 				</div>
 			</div>
 		</section>
 
         <section class="contact-container h-[20vh] w-1/2 mx-auto relative" id="contact">
-			<p class="contact-text font-it text-[20px] text-white text-center pt-[15%] pb-[10px] tracking-[-0.5px] opacity-85"><span class="text-customBeige">Contact</span> me via email at <span class="text-customBeige">edu.fathan@gmail.com</span> for all inquiries.</p>
-            <p class="contact-text2 font-montM text-[12px] text-white text-center pb-[10%] opacity-80">Designed and built by Fathan Raedaya</p>
+			<p class="contact-text font-it text-[16px] text-white text-center pt-[15%] pb-[10px] tracking-[-0.5px] opacity-85"><span class="text-customGrey">Contact</span> me via email at <span class="text-customGrey">edu.fathan@gmail.com</span> for all inquiries.</p>
+            <p class="contact-text2 font-montM text-[10px] text-white text-center pb-[10%] opacity-80">Designed and built by Fathan Raedaya</p>
         </section>
     </main>
     
