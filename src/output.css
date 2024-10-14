@@ -1627,6 +1627,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:visible {
+    visibility: visible;
+  }
+
   .lg\:absolute {
     position: absolute;
   }
@@ -1647,24 +1651,16 @@ video {
     margin-top: 30px;
   }
 
-  .lg\:mt-20 {
-    margin-top: 5rem;
+  .lg\:h-\[300px\] {
+    height: 300px;
   }
 
   .lg\:h-\[30px\] {
     height: 30px;
   }
 
-  .lg\:h-\[400px\] {
-    height: 400px;
-  }
-
   .lg\:h-full {
     height: 100%;
-  }
-
-  .lg\:h-\[300px\] {
-    height: 300px;
   }
 
   .lg\:w-1\/2 {
@@ -1690,6 +1686,10 @@ video {
 
   .lg\:opacity-0 {
     opacity: 0;
+  }
+
+  .lg\:opacity-100 {
+    opacity: 1;
   }
 
   .group:hover .lg\:group-hover\:scale-90 {
