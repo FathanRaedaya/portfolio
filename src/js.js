@@ -170,3 +170,44 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+function isElementInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    const threshold = 50;
+    return (
+        rect.top >= -threshold &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + threshold
+    );
+}
+
+function handleScroll() {
+    const elements = document.querySelectorAll('.slide-in, .slide-in-left, .slide-in-right');
+    elements.forEach((element) => {
+        if (isElementInViewport(element) && !element.classList.contains('active')) {
+            element.classList.add('active');
+        }
+    });
+}
+
+let ticking = false;
+
+function onScroll() {
+    if (!ticking) {
+        window.requestAnimationFrame(() => {
+            handleScroll();
+            ticking = false;
+        });
+        ticking = true;
+    }
+}
+
+window.addEventListener('scroll', onScroll);
+
+handleScroll();
+
+  document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+      const homeSection = document.getElementById('home');
+      homeSection.classList.add('active');
+      
+    }, 2200); 
+  });
