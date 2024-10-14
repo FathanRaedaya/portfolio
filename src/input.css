@@ -7,11 +7,11 @@
 }
 
 ::-webkit-scrollbar-track {
-	background: #66545e;
+	background: #23272a;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #333333;
+	background: #99aab5;
 	border-radius: 10px;
 }
 
@@ -142,8 +142,7 @@ color: #99aab5;
 	.projects-container {
         width: 80%;
         padding: 20px;
-		height: 120vh;
-    }
+	}
 
     .about-heading {
         padding-top: 5%;
@@ -157,6 +156,14 @@ color: #99aab5;
 	#home p {
 		font-size: 12px;
 	}
+
+	.project-boxes {
+        flex-direction: column;
+    }
+
+    .project-row {
+        flex-direction: column;
+    }
 }
 
 
@@ -175,17 +182,8 @@ color: #99aab5;
 	}
 
 	.projects-container {
-        width: 90%;
-        height: 150vh;
+        width: 70%;
         padding: 1.5rem;
-    }
-
-    .project-boxes {
-        flex-direction: column;
-    }
-
-    .project-row {
-        flex-direction: column;
     }
 
     article {
@@ -197,6 +195,20 @@ color: #99aab5;
         text-align: center;
         padding-top: 10%;
     }
+
+	.project-inside {
+		position: static;
+		opacity: 1;
+		background-color: #99aab5;
+	}
+	
+	.project-image {
+		transform: none;
+	}
+	
+	.group:hover .project-image {
+		transform: none;
+	}
 }
 
 
@@ -204,11 +216,10 @@ color: #99aab5;
 	.project-image {
 		min-height: 250px;
 		margin: 0;
-
 	}
 	
 	.projects-container {
-		width: 100%;
+		width: 80%;
 	}
 
 	.project-inside h3, .project-inside p {
@@ -217,10 +228,6 @@ color: #99aab5;
 
 	.intro-text {
 		font-size: 60px;
-	}
-
-	.contact-text {
-		padding-bottom: 15%;
 	}
 }
 
@@ -243,6 +250,7 @@ color: #99aab5;
 	.about-container {
 		font-size: 12px;
 		height: 130vh;
+		width: 90%;
 	}
 
 	.modal-scroll {
@@ -254,7 +262,8 @@ color: #99aab5;
 	}
 
 	.projects-container {
-		height: 110vh;
+		height: 140vh;
+		width: 90%;
 	}
 
 }
