@@ -70,39 +70,59 @@ window.addEventListener('load', function() {
   });
 
   document.addEventListener('DOMContentLoaded', function() {
+
     const scrollArrow = document.getElementById('scroll-arrow');
     let isArrowVisible = false;
-    let hasScrolled = false;
+    let isInitialized = false;
     
     scrollArrow.style.display = 'none';
     scrollArrow.style.opacity = '0';
-
+    
     function fadeInArrow() {
         if (!isArrowVisible) {
             scrollArrow.style.display = 'block';
-            setTimeout(() => {
-                scrollArrow.style.opacity = '1';
-                scrollArrow.classList.remove('fade-out');
-            }, 50);
+            
+            scrollArrow.offsetHeight;
+            
+            scrollArrow.style.opacity = '1';
             isArrowVisible = true;
+            
+            if (!isInitialized) {
+                scrollArrow.classList.add('initialized');
+                isInitialized = true;
+            }
         }
     }
 
     function fadeOutArrow() {
         if (isArrowVisible) {
-            scrollArrow.classList.add('fade-out');
+            scrollArrow.style.opacity = '0';
+            
             setTimeout(() => {
-                scrollArrow.style.display = 'none';
+                if (scrollArrow.style.opacity === '0') {
+                    scrollArrow.style.display = 'none';
+                }
             }, 500);
+            
             isArrowVisible = false;
         }
     }
-    setTimeout(fadeInArrow, 2000);
 
-    window.addEventListener('scroll', function() {
-        hasScrolled = true;
+    fadeOutArrow();
+    
+    const initialDelay = new Promise(resolve => setTimeout(resolve, 2000));
+    
+    initialDelay.then(() => {
         if (window.scrollY === 0) {
             fadeInArrow();
+        }
+    });
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY === 0) {
+            if (isInitialized) {
+                fadeInArrow();
+            }
         } else {
             fadeOutArrow();
         }
@@ -115,7 +135,6 @@ window.addEventListener('load', function() {
             behavior: 'smooth'
         });
     });
-
 });
 
 function toggleNavbarVisibility(hide) {
@@ -204,10 +223,10 @@ window.addEventListener('scroll', onScroll);
 
 handleScroll();
 
-  document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function() {
-      const homeSection = document.getElementById('home');
-      homeSection.classList.add('active');
-      
-    }, 2200); 
-  });
+document.addEventListener('DOMContentLoaded', function() {
+setTimeout(function() {
+    const homeSection = document.getElementById('home');
+    homeSection.classList.add('active');
+    
+}, 2200); 
+});
