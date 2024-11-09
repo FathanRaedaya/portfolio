@@ -94,41 +94,41 @@
                     <a href="https://github.com/FathanRaedaya/budget-tracker">
                       <img src="src/assets/images/github.svg" alt="GitHub Icon" class="h-[24px] lg:h-[30px] fadeout">
                     </a>
-                    <button id="budgetLearnMoreBtn" class="ml-auto group transition-all duration-300 ease-in-out">
-                      <p class="font-montM text-white flex items-center gap-2 relative fadeout">
+                    <button id="budgetLearnMoreBtn" class="ml-auto group transition-all duration-300 ease-in-out fadeout">
+                      <p class="font-medium text-white flex items-center gap-2 relative">
                         <span class="relative">
                           Learn more
-                          <span class="absolute left-0 -bottom-0.5 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
+                          <span class="absolute left-0 -bottom-0.5 w-0 h-px bg-white transition-all duration-300 group-hover:w-full"></span>
                         </span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                         </svg>
                       </p>
                     </button>
                   </div>
                 </div>
-                <div id="budgetModalOverlay" class="font-montL modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-                  <div class="modal-content w-full max-h-[90vh] sm:max-w-[1000px] bg-gray-800 text-white rounded-xl mx-4">
-                    <div class="p-24 modal-scroll overflow-y-auto max-h-[90vh]">
-                      <div class="flex justify-between items-center mb-4">
-                        <h2 class="text-2xl font-bold">Budget Tracker</h2>
-                        <button id="budgetCloseModalBtn" class="p-2 hover:bg-gray-700 rounded-full">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <div id="budgetModalOverlay" class="font-montL modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-2 sm:p-4">
+                  <div class="modal-content w-full max-h-[95vh] sm:max-w-[90vw] md:max-w-[800px] lg:max-w-[1000px] bg-gray-800 text-white rounded-xl">
+                    <div class="p-4 sm:p-6 md:p-8 modal-scroll overflow-y-auto max-h-[95vh]">
+                      <div class="flex justify-between items-center mb-6">
+                        <h2 class="text-xl sm:text-2xl font-bold">Budget Tracker</h2>
+                        <button id="budgetCloseModalBtn" class="p-1.5 hover:bg-gray-700 rounded-full transition-colors">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M18 6L6 18M6 6l12 12"/>
                           </svg>
                         </button>
                       </div>
                       
-                      <div class="space-y-8">
+                      <div class="space-y-6 sm:space-y-8">
                         <div>
-                          <p class="text-lg">
+                          <p class="text-base sm:text-lg">
                             A Flask-based web application for tracking personal finances, featuring income and expense management, goal setting, 
                             and real-time budget calculations. Built with Python, Flask, SQLAlchemy, and SQLite, this application demonstrates 
                             practical implementation of CRUD operations and database management.
                           </p>
                         </div>
-
-                        <div class="w-full max-w-2xl mx-auto rounded-xl overflow-hidden bg-gray-900">
+                
+                        <div class="w-full max-w-2xl mx-auto rounded-lg overflow-hidden bg-gray-900">
                           <video class="w-full aspect-video object-cover" autoplay loop muted playsinline>
                             <source src="src/assets/videos/budget-tracker.mp4" type="video/mp4">
                             Your browser does not support the video tag.
@@ -136,8 +136,8 @@
                         </div>
                 
                         <div>
-                          <h3 class="text-xl font-semibold mb-3">Key Features</h3>
-                          <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                          <h3 class="text-lg sm:text-xl font-semibold mb-2">Key Features</h3>
+                          <ul class="list-disc pl-4 sm:pl-6 space-y-1.5 text-gray-300">
                             <li>Income and expense tracking</li>
                             <li>Financial goal setting and progress monitoring</li>
                             <li>Real-time budget calculations and balance tracking</li>
@@ -147,45 +147,43 @@
                         </div>
                 
                         <div>
-                          <h3 class="text-xl font-semibold mb-3">Code Implementation</h3>
-
-                          <div class="mb-6">
+                          <h3 class="text-lg sm:text-xl font-semibold mb-3">Code Implementation</h3>
+                          
+                          <div class="mb-4">
                             <p class="text-gray-300 mb-2">SQLAlchemy Models:</p>
-                            <div class="bg-gray-900 rounded-lg p-4 font-mono text-sm overflow-x-auto">
-                              <pre class="text-gray-300">
-                from app import db
-
+                            <div class="bg-gray-900 rounded-lg overflow-x-auto">
+                              <pre class="p-4 text-gray-300 text-sm whitespace-pre"><code>from app import db
+                
                 class Income(db.Model):
                     id = db.Column(db.Integer, primary_key=True)
                     name = db.Column(db.String(30), nullable=False)
                     amount = db.Column(db.Float, nullable=False)
-
+                
                 class Expense(db.Model):
                     id = db.Column(db.Integer, primary_key=True)
                     name = db.Column(db.String(30), nullable=False)
                     amount = db.Column(db.Float, nullable=False)
-
+                
                 class Goal(db.Model):
                     id = db.Column(db.Integer, primary_key=True)
                     name = db.Column(db.String(30))
                     value = db.Column(db.Float)
-
+                
                 def init_db():
                     db.create_all()
-
+                
                 if __name__ == '__main__':
-                    init_db()</pre>
+                    init_db()</code></pre>
                             </div>
                           </div>
-
-                          <div class="mb-6">
+                
+                          <div class="mb-4">
                             <p class="text-gray-300 mb-2">Form Classes with Validation:</p>
-                            <div class="bg-gray-900 rounded-lg p-4 font-mono text-sm overflow-x-auto">
-                              <pre class="text-gray-300">
-                from flask_wtf import FlaskForm
+                            <div class="bg-gray-900 rounded-lg overflow-x-auto">
+                              <pre class="p-4 text-gray-300 text-sm whitespace-pre"><code>from flask_wtf import FlaskForm
                 from wtforms import StringField, FloatField, DecimalField
                 from wtforms.validators import DataRequired, InputRequired, Length, NumberRange
-
+                
                 class IncomeForm(FlaskForm):
                     name = StringField('Income Name', validators=[
                         DataRequired(),
@@ -195,7 +193,7 @@
                         DataRequired(),
                         NumberRange(min=0, max=9999999999999.99)
                     ])
-
+                
                 class ExpenseForm(FlaskForm):
                     name = StringField('Expense Name', validators=[
                         DataRequired(),
@@ -205,7 +203,7 @@
                         DataRequired(),
                         NumberRange(min=0, max=9999999999999.99)
                     ])
-
+                
                 class GoalForm(FlaskForm):
                     name = StringField('Name', validators=[
                         DataRequired(),
@@ -214,15 +212,14 @@
                     value = DecimalField('Value', validators=[
                         InputRequired(),
                         NumberRange(min=0, max=9999999999999.99)
-                    ])</pre>
+                    ])</code></pre>
                             </div>
                           </div>
-                          
-                          <div class="mb-6">
+                
+                          <div class="mb-4">
                             <p class="text-gray-300 mb-2">Main Dashboard Route Handler:</p>
-                            <div class="bg-gray-900 rounded-lg p-4 font-mono text-sm overflow-x-auto">
-                              <pre class="text-gray-300">
-                @app.route('/')
+                            <div class="bg-gray-900 rounded-lg overflow-x-auto">
+                              <pre class="p-4 text-gray-300 text-sm whitespace-pre"><code>@app.route('/')
                 def index():
                     # Calculate total income and expenses
                     total_income = db.session.query(
@@ -249,15 +246,14 @@
                         goal_name=goal_name,
                         goal_value=goal_value,
                         progress=progress
-                    )</pre>
+                    )</code></pre>
                             </div>
                           </div>
                 
-                          <div class="mb-6">
+                          <div class="mb-4">
                             <p class="text-gray-300 mb-2">Income Management System:</p>
-                            <div class="bg-gray-900 rounded-lg p-4 font-mono text-sm overflow-x-auto">
-                              <pre class="text-gray-300">
-                @app.route('/income', methods=['GET', 'POST'])
+                            <div class="bg-gray-900 rounded-lg overflow-x-auto">
+                              <pre class="p-4 text-gray-300 text-sm whitespace-pre"><code>@app.route('/income', methods=['GET', 'POST'])
                 def income():
                     form = IncomeForm()
                     
@@ -286,15 +282,14 @@
                     return render_template('income.html', 
                         form=form, 
                         incomes=incomes
-                    )</pre>
+                    )</code></pre>
                             </div>
                           </div>
                 
-                          <div>
+                          <div class="mb-4">
                             <p class="text-gray-300 mb-2">Goal Management System:</p>
-                            <div class="bg-gray-900 rounded-lg p-4 font-mono text-sm overflow-x-auto">
-                              <pre class="text-gray-300">
-                @app.route('/goal', methods=['GET', 'POST'])
+                            <div class="bg-gray-900 rounded-lg overflow-x-auto">
+                              <pre class="p-4 text-gray-300 text-sm whitespace-pre"><code>@app.route('/goal', methods=['GET', 'POST'])
                 def goal():
                     form = GoalForm()
                 
@@ -320,31 +315,31 @@
                     return render_template('goal.html', 
                         form=form, 
                         current_goal=current_goal
-                    )</pre>
+                    )</code></pre>
                             </div>
                           </div>
                         </div>
                 
                         <div>
-                          <h3 class="text-xl font-semibold mb-3">Technology Stack</h3>
-                          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                            <div class="p-4 bg-gray-700 rounded-lg text-center">
+                          <h3 class="text-lg sm:text-xl font-semibold mb-3">Technology Stack</h3>
+                          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                            <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
                               <span class="font-medium">Python/Flask</span>
                               <p class="text-sm text-gray-300">Backend Framework</p>
                             </div>
-                            <div class="p-4 bg-gray-700 rounded-lg text-center">
+                            <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
                               <span class="font-medium">SQLAlchemy</span>
                               <p class="text-sm text-gray-300">ORM</p>
                             </div>
-                            <div class="p-4 bg-gray-700 rounded-lg text-center">
+                            <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
                               <span class="font-medium">SQLite</span>
                               <p class="text-sm text-gray-300">Database</p>
                             </div>
-                            <div class="p-4 bg-gray-700 rounded-lg text-center">
+                            <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
                               <span class="font-medium">HTML/CSS</span>
                               <p class="text-sm text-gray-300">Frontend</p>
                             </div>
-                            <div class="p-4 bg-gray-700 rounded-lg text-center">
+                            <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
                               <span class="font-medium">WTForms</span>
                               <p class="text-sm text-gray-300">Form Handling</p>
                             </div>
@@ -352,8 +347,8 @@
                         </div>
                 
                         <div>
-                          <h3 class="text-xl font-semibold mb-3">Technical Highlights</h3>
-                          <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                          <h3 class="text-lg sm:text-xl font-semibold mb-2">Technical Highlights</h3>
+                          <ul class="list-disc pl-4 sm:pl-6 space-y-1.5 text-gray-300">
                             <li>Well-organized code structure using Flask framework</li>
                             <li>Efficient database management for storing and retrieving data</li>
                             <li>Clear separation between different parts of the application for better maintenance</li>
@@ -362,7 +357,7 @@
                         </div>
                 
                         <div>
-                          <h3 class="text-xl font-semibold mb-3">Project Links</h3>
+                          <h3 class="text-lg sm:text-xl font-semibold mb-2">Project Links</h3>
                           <p class="text-gray-300">
                             View the complete source code on 
                             <a href="#" class="text-white relative inline-block hover:after:w-full after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[1px] after:bg-white after:transition-all after:duration-300">
@@ -392,41 +387,42 @@
                     <a href="https://typingtest.fathanraedaya.com/">
                       <img src="src/assets/images/live.svg" alt="Live Icon" class="h-[24px] lg:h-[30px] ml-[10px] fadeout">
                     </a>
-                    <button id="typingLearnMoreBtn" class="ml-auto group transition-all duration-300 ease-in-out">
-                      <p class="font-montM text-white flex items-center gap-2 relative fadeout">
+                    <button id="typingLearnMoreBtn" class="ml-auto group transition-all duration-300 ease-in-out fadeout">
+                      <p class="font-medium text-white flex items-center gap-2 relative">
                         <span class="relative">
                           Learn more
-                          <span class="absolute left-0 -bottom-0.5 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
+                          <span class="absolute left-0 -bottom-0.5 w-0 h-px bg-white transition-all duration-300 group-hover:w-full"></span>
                         </span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                         </svg>
                       </p>
                     </button>
                   </div>
                 </div>
-                <div id="typingModalOverlay" class="font-montL modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
-                  <div class="modal-content w-full max-h-[90vh] sm:max-w-[1000px] bg-gray-800 text-white rounded-xl mx-4">
-                    <div class="p-24 modal-scroll overflow-y-auto max-h-[90vh]">
-                      <div class="flex justify-between items-center mb-4">
-                        <h2 class="text-2xl font-bold">Get Typing</h2>
-                        <button id="typingCloseModalBtn" class="p-2 hover:bg-gray-700 rounded-full">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <div id="typingModalOverlay" class="font-montL modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-2 sm:p-4">
+                  <div class="modal-content w-full max-h-[95vh] sm:max-w-[90vw] md:max-w-[800px] lg:max-w-[1000px] bg-gray-800 text-white rounded-xl">
+                    <div class="p-4 sm:p-6 md:p-8 modal-scroll overflow-y-auto max-h-[95vh]">
+                      <div class="flex justify-between items-center mb-6">
+                        <h2 class="text-xl sm:text-2xl font-bold">Get Typing</h2>
+                        <button id="typingCloseModalBtn" class="p-1.5 hover:bg-gray-700 rounded-full transition-colors">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M18 6L6 18M6 6l12 12"/>
                           </svg>
                         </button>
                       </div>
                       
-                      <div class="space-y-8">
+
+                      <div class="space-y-6 sm:space-y-8">
                         <div>
-                          <p class="text-lg">
+                          <p class="text-base sm:text-lg">
                             A MonkeyType-inspired typing test application built with vanilla JavaScript, HTML, and Tailwind CSS. 
                             This project showcases advanced DOM manipulation and real-time calculations while providing an 
                             intuitive interface for users to test and improve their typing speed.
                           </p>
                         </div>
                 
-                        <div class="w-full max-w-2xl mx-auto rounded-xl overflow-hidden bg-gray-900">
+                        <div class="w-full max-w-2xl mx-auto rounded-lg overflow-hidden bg-gray-900">
                           <video class="w-full aspect-video object-cover" autoplay loop muted playsinline>
                             <source src="src/assets/videos/gettyping.mp4" type="video/mp4">
                             Your browser does not support the video tag.
@@ -434,8 +430,8 @@
                         </div>
                 
                         <div>
-                          <h3 class="text-xl font-semibold mb-3">Key Features</h3>
-                          <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                          <h3 class="text-lg sm:text-xl font-semibold mb-2">Key Features</h3>
+                          <ul class="list-disc pl-4 sm:pl-6 space-y-1.5 text-gray-300">
                             <li>Customizable test duration (15, 30, 60, or 120 seconds)</li>
                             <li>Multiple difficulty levels with varied word sets</li>
                             <li>Real-time WPM calculation and accuracy tracking</li>
@@ -445,13 +441,12 @@
                         </div>
                 
                         <div>
-                          <h3 class="text-xl font-semibold mb-3">Code Implementation</h3>
+                          <h3 class="text-lg sm:text-xl font-semibold mb-3">Code Implementation</h3>
                           
-                          <div class="mb-6">
+                          <div class="mb-4">
                             <p class="text-gray-300 mb-2">Real-time WPM Calculation:</p>
-                            <div class="bg-gray-900 rounded-lg p-4 font-mono text-sm overflow-x-auto">
-                              <pre class="text-gray-300">
-                calculateWPM() {
+                            <div class="bg-gray-900 rounded-lg overflow-x-auto">
+                              <pre class="p-4 text-gray-300 text-sm whitespace-pre"><code>calculateWPM() {
                     const timeElapsed = Date.now() - this.testStart;
                     const words = [...document.querySelectorAll(".word")];
                     const typedWords = words.slice(0, words.indexOf(
@@ -466,15 +461,14 @@
                     });
                 
                     return Math.round((correctWords.length / timeElapsed) * 60000);
-                }</pre>
+                }</code></pre>
                             </div>
                           </div>
                 
-                          <div class="mb-6">
+                          <div class="mb-4">
                             <p class="text-gray-300 mb-2">Input Processing System:</p>
-                            <div class="bg-gray-900 rounded-lg p-4 font-mono text-sm overflow-x-auto">
-                              <pre class="text-gray-300">
-                handleLetterInput(key, currentWord, currentLetter) {
+                            <div class="bg-gray-900 rounded-lg overflow-x-auto">
+                              <pre class="p-4 text-gray-300 text-sm whitespace-pre"><code>handleLetterInput(key, currentWord, currentLetter) {
                     if (currentLetter) {
                         const isCorrect = key === currentLetter.innerHTML;
                         currentLetter.classList.add(isCorrect ? "correct" : "incorrect");
@@ -489,15 +483,14 @@
                         extraLetter.className = "letter incorrect extra";
                         currentWord.appendChild(extraLetter);
                     }
-                }</pre>
+                }</code></pre>
                             </div>
                           </div>
                 
                           <div>
                             <p class="text-gray-300 mb-2">Dynamic UI Updates:</p>
-                            <div class="bg-gray-900 rounded-lg p-4 font-mono text-sm overflow-x-auto">
-                              <pre class="text-gray-300">
-                updateCursorPosition() {
+                            <div class="bg-gray-900 rounded-lg overflow-x-auto">
+                              <pre class="p-4 text-gray-300 text-sm whitespace-pre"><code>updateCursorPosition() {
                     const nextLetter = document.querySelector(".letter.current");
                     const nextWord = document.querySelector(".word.current");
                     
@@ -510,32 +503,32 @@
                         this.cursor.style.top = `${rect.top}px`;
                         this.cursor.style.left = `${rect.right}px`;
                     }
-                }</pre>
+                }</code></pre>
                             </div>
                           </div>
                         </div>
                 
                         <div>
-                          <h3 class="text-xl font-semibold mb-3">Technology Stack</h3>
-                          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                            <div class="p-4 bg-gray-700 rounded-lg text-center">
+                          <h3 class="text-lg sm:text-xl font-semibold mb-3">Technology Stack</h3>
+                          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
                               <span class="font-medium">JavaScript</span>
                               <p class="text-sm text-gray-300">Core Logic</p>
                             </div>
-                            <div class="p-4 bg-gray-700 rounded-lg text-center">
+                            <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
                               <span class="font-medium">HTML</span>
                               <p class="text-sm text-gray-300">Structure</p>
                             </div>
-                            <div class="p-4 bg-gray-700 rounded-lg text-center">
+                            <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
                               <span class="font-medium">Tailwind CSS</span>
                               <p class="text-sm text-gray-300">Styling</p>
                             </div>
                           </div>
                         </div>
-
+                
                         <div>
-                          <h3 class="text-xl font-semibold mb-3">Technical Highlights</h3>
-                          <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                          <h3 class="text-lg sm:text-xl font-semibold mb-2">Technical Highlights</h3>
+                          <ul class="list-disc pl-4 sm:pl-6 space-y-1.5 text-gray-300">
                             <li>Implemented efficient DOM manipulation for real-time text processing and validation</li>
                             <li>Built a robust event handling system for keyboard input management</li>
                             <li>Developed dynamic UI updates using getBoundingClientRect() for precise cursor positioning</li>
@@ -545,8 +538,8 @@
                         </div>
                 
                         <div>
-                          <h3 class="text-xl font-semibold mb-3">Future Development</h3>
-                          <ul class="list-disc pl-6 space-y-2 text-gray-300">
+                          <h3 class="text-lg sm:text-xl font-semibold mb-2">Future Development</h3>
+                          <ul class="list-disc pl-4 sm:pl-6 space-y-1.5 text-gray-300">
                             <li>Leaderboard and user accounts</li>
                             <li>Performance statistics and progress tracking</li>
                             <li>Custom word lists and programming snippets</li>
@@ -555,7 +548,7 @@
                         </div>
                 
                         <div>
-                          <h3 class="text-xl font-semibold mb-3">Project Links</h3>
+                          <h3 class="text-lg sm:text-xl font-semibold mb-2">Project Links</h3>
                           <p class="text-gray-300">
                             View the source code on 
                             <a href="https://github.com/FathanRaedaya/typing-test" 
