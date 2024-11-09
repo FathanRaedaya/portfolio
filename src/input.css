@@ -253,14 +253,7 @@ color: #99aab5;
 }
 
 @media (max-width: 480px) {
-	#navbar {
-		font-size: 10px;
-		padding: 0.5rem;
-		width: 90%;
-	}
-	#navbar ul li a {
-		padding: 0.5rem 0.25rem;
-	}
+	
 
 	.portrait {
 		width: 100%;
