@@ -1,5 +1,71 @@
 module.exports = {
   content: ["./*.html","./src/**/*.js"],
+  safelist: [
+    'fixed',
+    'inset-0',
+    'bg-black',
+    'bg-opacity-50',
+    'flex',
+    'items-center',
+    'justify-center',
+    'z-50',
+    'p-4',
+    'overflow-y-auto',
+    'w-full',
+    'max-h-[95vh]',
+    'sm:max-w-[90vw]',
+    'md:max-w-[800px]',
+    'lg:max-w-[1000px]',
+    'relative',
+    'mx-auto',
+    'bg-gray-800',
+    'rounded-xl',
+    'text-white',
+
+    'group',
+    'group-hover:scale-90',
+    'group-hover:opacity-100',
+    'group-hover:w-full',
+    'group-hover:translate-x-1',
+
+    'transition-all',
+    'transition-transform',
+    'transition-opacity',
+    'duration-300',
+    'ease-in-out',
+    'transform',
+
+    'absolute',
+    'left-0',
+    '-bottom-0.5',
+    'w-0',
+    'h-px',
+    'bg-white',
+    'ml-auto',
+    'gap-2',
+    
+    'font-medium',
+    'text-gray-300',
+    
+    'sm:p-6',
+    'md:p-8',
+    'lg:opacity-0',
+    'lg:absolute',
+    'lg:bg-opacity-98',
+    'lg:mt-[30px]',
+    'lg:h-full',
+    'lg:p-[40px]',
+
+    'bg-[#99aab5]',
+    'bg-[#23272a]',
+    'border-[#333333]',
+
+    'fadeout',
+    'slide-in',
+    'slide-in-left',
+    'slide-in-right',
+    'slide-in-delay'
+  ],
   theme: {
     extend: {
       colors: {

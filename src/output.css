@@ -762,6 +762,10 @@ video {
   max-height: 300px;
 }
 
+.max-h-\[85vh\] {
+  max-height: 85vh;
+}
+
 .max-h-\[95vh\] {
   max-height: 95vh;
 }
@@ -1008,10 +1012,6 @@ video {
 
 .p-1\.5 {
   padding: 0.375rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .p-2\.5 {
@@ -1730,6 +1730,16 @@ video {
 .group:hover .group-hover\:translate-x-1 {
   --tw-translate-x: 0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:scale-90 {
+  --tw-scale-x: .9;
+  --tw-scale-y: .9;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
 }
 
 @media (min-width: 640px) {
