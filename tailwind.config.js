@@ -104,4 +104,6 @@ module.exports = {
     },
   },
   plugins: [],
+  output: "./src",
+
 }
