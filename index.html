@@ -4,7 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link href="./src/output.css" rel="stylesheet">
-    <title>Fathan Raedaya - Portfolio</title>
+    <title>Fathan</title>
+    <link rel="icon" type="image/svg+xml" href="./src/assets/images/icon.svg">
 </head>
 <body class="bg-[#23272a]">
     <header>
@@ -74,502 +75,533 @@
             </p>
         </section>
 
-        <section class="projects-container w-full lg:w-1/2 mx-auto relative px-4 lg:px-0" id="projects">
-          <h2 class="projects-heading font-it text-[32px] md:text-[40px] text-white text-center md:text-right pt-[15%] tracking-[-2px] font-normal slide-in-right">
-            <span class="small">02 </span>my <span class="text-customGrey">projects</span>
+        <section id="projects" class="projects-container w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <h2 class="projects-heading font-it text-[32px] md:text-[40px] text-white text-center md:text-right pt-8 md:pt-12 tracking-[-2px] font-normal">
+              <span class="text-gray-400">02 </span>my <span class="text-customGrey">projects</span>
           </h2>
-          <div class="project-boxes flex flex-col mt-[40px]">
-            <div class="project-row flex flex-col lg:flex-row justify-between">
-              <article class="relative overflow-hidden bg-[#99aab5] rounded-[30px] border-2 border-[#333333] flex-1 h-auto lg:h-[300px] group mb-8 lg:mb-0 lg:mr-4 slide-in">
-                <img src="src/assets/images/budget-tracker.png" alt="Project Image" class="project-image w-full h-[200px] lg:h-full object-cover transition-transform duration-300 ease-in-out lg:group-hover:scale-90">
-                <div class="project-inside lg:absolute inset-0 bg-[#99aab5] lg:bg-opacity-98 flex flex-col justify-center p-6 lg:p-[40px] lg:opacity-0 transition-opacity duration-300 ease-in-out lg:group-hover:opacity-100 rounded-[30px]">
-                  <h3 class="font-mont text-[20px] text-white font-normal">Budget Tracker</h3>
-                  <p class="font-montM text-[16px] text-white mt-[10px] opacity-90 min-h-[48px]">
-                    A web app to track your income and expenses.
+        
+          <div class="grid-projects grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mt-8 md:mt-12">
+            <article class="project-card group relative bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-2xl border border-white/10 overflow-hidden transition-all duration-500 hover:border-white/20 hover:shadow-lg hover:shadow-blue-500/10 hover:-translate-y-1">
+              <div class="project-image relative h-48 sm:h-56 md:h-64 overflow-hidden">
+                  <img src="src/assets/images/budget-tracker.png" alt="Project" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                  <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-90 group-hover:opacity-75 transition-opacity duration-500"></div>
+              </div>
+          
+              <div class="project-content p-6">
+                  <div class="space-y-2 mb-4">
+                      <h3 class="text-xl font-semibold text-white tracking-tight transition-colors duration-300 group-hover:text-blue-400">Project Title</h3>
+                      <div class="project-tech flex flex-wrap gap-2">
+                          <span class="px-2 py-1 text-xs font-medium text-purple-300 bg-purple-500/10 rounded-full transition-all duration-300 hover:bg-blue-500/20">Python</span>
+                          <span class="px-2 py-1 text-xs font-medium text-green-300 bg-green-500/10 rounded-full transition-all duration-300 hover:bg-blue-500/20">Flask</span>
+                          <span class="px-2 py-1 text-xs font-medium text-yellow-300 bg-yellow-500/10 rounded-full transition-all duration-300 hover:bg-blue-500/20">SQLite</span>
+                      </div>
+                  </div>
+          
+                  <p class="text-gray-300 text-sm mb-6 transition-colors duration-300 group-hover:text-gray-200">
+                      A web app to track your income and expenses with goal setting and real-time budget calculations.
                   </p>
-                  <div class="font-montM text-[14px] lg:text-[16px] text-white mt-[15px] lg:mt-[30px] opacity-65">
-                    Python (Flask), HTML, CSS, JavaScript
-                  </div>
-                  <div class="flex mt-[15px] lg:mt-[30px]">
-                    <a href="https://github.com/FathanRaedaya/budget-tracker">
-                      <img src="src/assets/images/github.svg" alt="GitHub Icon" class="h-[24px] lg:h-[30px] fadeout">
-                    </a>
-                    <button id="budgetLearnMoreBtn" class="ml-auto group transition-all duration-300 ease-in-out fadeout">
-                      <p class="font-medium text-white flex items-center gap-2 relative">
-                        <span class="relative">
-                          Learn more
-                          <span class="absolute left-0 -bottom-0.5 w-0 h-px bg-white transition-all duration-300 group-hover:w-full"></span>
-                        </span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                        </svg>
-                      </p>
-                    </button>
-                  </div>
-                </div>
-                <div id="budgetModalOverlay" class="font-montL modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
-                  <div class="modal-content w-full max-h-[95vh] sm:max-w-[90vw] md:max-w-[800px] lg:max-w-[1000px] relative mx-auto bg-gray-800 rounded-xl text-white"> 
-                    <div class="p-4 sm:p-6 md:p-8 modal-scroll overflow-y-auto max-h-[85vh]">
-                      <div class="flex justify-between items-center mb-6">
-                        <h2 class="text-xl sm:text-2xl font-bold">Budget Tracker</h2>
-                        <button id="budgetCloseModalBtn" class="p-1.5 hover:bg-gray-700 rounded-full transition-colors">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M18 6L6 18M6 6l12 12"/>
+          
+                  <div class="flex items-center justify-between">
+                      <div class="flex gap-4">
+                          <a href="https://github.com/FathanRaedaya/budget-tracker" class="group/link flex items-center gap-2 text-gray-400 hover:text-white transition-all duration-300 hover:scale-105">
+                              <svg class="w-5 h-5 transition-colors duration-300 group-hover/link:text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+                                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                              </svg>
+                              <span class="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-blue-400 after:transition-all after:duration-300 group-hover/link:after:w-full">View Code</span>
+                          </a>
+                      </div>
+          
+                      <button id="budgetLearnMoreBtn" class="learn-more-btn group/btn flex items-center gap-2 text-white relative hover:scale-105 transition-all duration-300">
+                          <span class="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-blue-400 after:transition-all after:duration-300 group-hover/btn:after:w-full">
+                              Learn more
+                          </span>
+                          <svg class="w-4 h-4 transition-all duration-300 group-hover/btn:translate-x-1 group-hover/btn:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                           </svg>
-                        </button>
-                      </div>
-                      
-                      <div class="space-y-6 sm:space-y-8">
-                        <div>
-                          <p class="text-base sm:text-lg">
-                            A Flask-based web application for tracking personal finances, featuring income and expense management, goal setting, 
-                            and real-time budget calculations. Built with Python, Flask, SQLAlchemy, and SQLite, this application demonstrates 
-                            practical implementation of CRUD operations and database management.
-                          </p>
-                        </div>
-                
-                        <div class="w-full max-w-2xl mx-auto rounded-lg overflow-hidden bg-gray-900">
-                          <video class="w-full aspect-video object-cover" autoplay loop muted playsinline>
-                            <source src="src/assets/videos/budget-tracker.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                          </video>
-                        </div>
-                
-                        <div>
-                          <h3 class="text-lg sm:text-xl font-semibold mb-2">Key Features</h3>
-                          <ul class="list-disc pl-4 sm:pl-6 space-y-1.5 text-gray-300">
-                            <li>Income and expense tracking</li>
-                            <li>Financial goal setting and progress monitoring</li>
-                            <li>Real-time budget calculations and balance tracking</li>
-                            <li>Duplicate entry prevention</li>
-                            <li>User feedback system with Flash messages</li>
-                          </ul>
-                        </div>
-                
-                        <div>
-                          <h3 class="text-lg sm:text-xl font-semibold mb-3">Code Implementation</h3>
-                          
-                          <div class="mb-4">
-                            <p class="text-gray-300 mb-2">SQLAlchemy Models:</p>
-                            <div class="bg-gray-900 rounded-lg overflow-x-auto">
-                              <pre class="p-4 text-gray-300 text-sm whitespace-pre"><code>from app import db
-                
-                class Income(db.Model):
-                    id = db.Column(db.Integer, primary_key=True)
-                    name = db.Column(db.String(30), nullable=False)
-                    amount = db.Column(db.Float, nullable=False)
-                
-                class Expense(db.Model):
-                    id = db.Column(db.Integer, primary_key=True)
-                    name = db.Column(db.String(30), nullable=False)
-                    amount = db.Column(db.Float, nullable=False)
-                
-                class Goal(db.Model):
-                    id = db.Column(db.Integer, primary_key=True)
-                    name = db.Column(db.String(30))
-                    value = db.Column(db.Float)
-                
-                def init_db():
-                    db.create_all()
-                
-                if __name__ == '__main__':
-                    init_db()</code></pre>
-                            </div>
-                          </div>
-                
-                          <div class="mb-4">
-                            <p class="text-gray-300 mb-2">Form Classes with Validation:</p>
-                            <div class="bg-gray-900 rounded-lg overflow-x-auto">
-                              <pre class="p-4 text-gray-300 text-sm whitespace-pre"><code>from flask_wtf import FlaskForm
-                from wtforms import StringField, FloatField, DecimalField
-                from wtforms.validators import DataRequired, InputRequired, Length, NumberRange
-                
-                class IncomeForm(FlaskForm):
-                    name = StringField('Income Name', validators=[
-                        DataRequired(),
-                        Length(max=30)
-                    ])
-                    amount = FloatField('Amount', validators=[
-                        DataRequired(),
-                        NumberRange(min=0, max=9999999999999.99)
-                    ])
-                
-                class ExpenseForm(FlaskForm):
-                    name = StringField('Expense Name', validators=[
-                        DataRequired(),
-                        Length(max=30)
-                    ])
-                    amount = FloatField('Amount', validators=[
-                        DataRequired(),
-                        NumberRange(min=0, max=9999999999999.99)
-                    ])
-                
-                class GoalForm(FlaskForm):
-                    name = StringField('Name', validators=[
-                        DataRequired(),
-                        Length(max=30)
-                    ])
-                    value = DecimalField('Value', validators=[
-                        InputRequired(),
-                        NumberRange(min=0, max=9999999999999.99)
-                    ])</code></pre>
-                            </div>
-                          </div>
-                
-                          <div class="mb-4">
-                            <p class="text-gray-300 mb-2">Main Dashboard Route Handler:</p>
-                            <div class="bg-gray-900 rounded-lg overflow-x-auto">
-                              <pre class="p-4 text-gray-300 text-sm whitespace-pre"><code>@app.route('/')
-                def index():
-                    # Calculate total income and expenses
-                    total_income = db.session.query(
-                        db.func.sum(Income.amount)
-                    ).scalar() or 0
-                    total_expense = db.session.query(
-                        db.func.sum(Expense.amount)
-                    ).scalar() or 0
-                
-                    # Fetch current goal
-                    temp_goal = Goal.query.first()
-                    goal_name = ""
-                    goal_value = ""
-                    progress = ""
-                
-                    if temp_goal:
-                        goal_name = temp_goal.name
-                        goal_value = temp_goal.value
-                        progress = total_income - total_expense
-                
-                    return render_template('index.html',
-                        total_income=total_income,
-                        total_expense=total_expense,
-                        goal_name=goal_name,
-                        goal_value=goal_value,
-                        progress=progress
-                    )</code></pre>
-                            </div>
-                          </div>
-                
-                          <div class="mb-4">
-                            <p class="text-gray-300 mb-2">Income Management System:</p>
-                            <div class="bg-gray-900 rounded-lg overflow-x-auto">
-                              <pre class="p-4 text-gray-300 text-sm whitespace-pre"><code>@app.route('/income', methods=['GET', 'POST'])
-                def income():
-                    form = IncomeForm()
-                    
-                    if form.validate_on_submit():
-                        name = form.name.data
-                        amount = form.amount.data
-                
-                        # Check for duplicates
-                        dupe_income = Income.query.filter(
-                            func.lower(Income.name) == func.lower(name)
-                        ).first()
-                        
-                        if dupe_income:
-                            flash('Invalid name (duplicate)', 'danger')
-                            return redirect(url_for('income'))
-                
-                        # Add new income
-                        new_income = Income(name=name, amount=amount)
-                        db.session.add(new_income)
-                        db.session.commit()
-                
-                        flash('Income added successfully', 'success')
-                        return redirect(url_for('income'))
-                
-                    incomes = Income.query.all()
-                    return render_template('income.html', 
-                        form=form, 
-                        incomes=incomes
-                    )</code></pre>
-                            </div>
-                          </div>
-                
-                          <div class="mb-4">
-                            <p class="text-gray-300 mb-2">Goal Management System:</p>
-                            <div class="bg-gray-900 rounded-lg overflow-x-auto">
-                              <pre class="p-4 text-gray-300 text-sm whitespace-pre"><code>@app.route('/goal', methods=['GET', 'POST'])
-                def goal():
-                    form = GoalForm()
-                
-                    if form.validate_on_submit():
-                        name = form.name.data
-                        value = form.value.data
-                
-                        # Ensure single goal
-                        dupe_goal = Goal.query.first()
-                        if dupe_goal:
-                            flash('A goal has already been created', 'warning')
-                            return redirect(url_for('goal'))
-                
-                        # Create new goal
-                        temp_goal = Goal(name=name, value=value)
-                        db.session.add(temp_goal)
-                        db.session.commit()
-                
-                        flash('Goal created successfully', 'success')
-                        return redirect(url_for('goal'))
-                
-                    current_goal = Goal.query.first()
-                    return render_template('goal.html', 
-                        form=form, 
-                        current_goal=current_goal
-                    )</code></pre>
-                            </div>
-                          </div>
-                        </div>
-                
-                        <div>
-                          <h3 class="text-lg sm:text-xl font-semibold mb-3">Technology Stack</h3>
-                          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                            <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
-                              <span class="font-medium">Python/Flask</span>
-                              <p class="text-sm text-gray-300">Backend Framework</p>
-                            </div>
-                            <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
-                              <span class="font-medium">SQLAlchemy</span>
-                              <p class="text-sm text-gray-300">ORM</p>
-                            </div>
-                            <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
-                              <span class="font-medium">SQLite</span>
-                              <p class="text-sm text-gray-300">Database</p>
-                            </div>
-                            <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
-                              <span class="font-medium">HTML/CSS</span>
-                              <p class="text-sm text-gray-300">Frontend</p>
-                            </div>
-                            <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
-                              <span class="font-medium">WTForms</span>
-                              <p class="text-sm text-gray-300">Form Handling</p>
-                            </div>
-                          </div>
-                        </div>
-                
-                        <div>
-                          <h3 class="text-lg sm:text-xl font-semibold mb-2">Technical Highlights</h3>
-                          <ul class="list-disc pl-4 sm:pl-6 space-y-1.5 text-gray-300">
-                            <li>Well-organized code structure using Flask framework</li>
-                            <li>Efficient database management for storing and retrieving data</li>
-                            <li>Clear separation between different parts of the application for better maintenance</li>
-                            <li>Smart database queries for quick calculation of totals and summaries</li>
-                          </ul>
-                        </div>
-                
-                        <div>
-                          <h3 class="text-lg sm:text-xl font-semibold mb-2">Project Links</h3>
-                          <p class="text-gray-300">
-                            View the complete source code on 
-                            <a href="#" class="text-white relative inline-block hover:after:w-full after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[1px] after:bg-white after:transition-all after:duration-300">
-                              GitHub
-                            </a>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
+                      </button>
                   </div>
                 </div>
               </article>
-              <article class="relative overflow-hidden bg-[#99aab5] rounded-[30px] border-2 border-[#333333] flex-1 h-auto lg:h-[300px] group mb-8 lg:mb-0 lg:ml-4 slide-in">
-                <img src="src/assets/images/gettyping.png" alt="Project Image" class="project-image w-full h-[200px] lg:h-full object-cover transition-transform duration-300 ease-in-out lg:group-hover:scale-90">
-                <div class="project-inside lg:absolute inset-0 bg-[#99aab5] lg:bg-opacity-98 flex flex-col justify-center p-6 lg:p-[40px] lg:opacity-0 transition-opacity duration-300 ease-in-out lg:group-hover:opacity-100 rounded-[30px]">
-                  <h3 class="font-mont text-[20px] text-white font-normal">GetTyping</h3>
-                  <p class="font-montM text-[16px] text-white mt-[10px] opacity-90 min-h-[48px]">
-                    A website to practice, improve and test your typing speed.
-                  </p>
-                  <div class="font-montM text-[14px] lg:text-[16px] text-white mt-[15px] lg:mt-[30px] opacity-65">
-                    HTML, TailwindCSS, Javascript
-                  </div>
-                  <div class="flex mt-[15px] lg:mt-[30px]">
-                    <a href="https://github.com/FathanRaedaya/typing-test">
-                      <img src="src/assets/images/github.svg" alt="GitHub Icon" class="h-[24px] lg:h-[30px] fadeout">
-                    </a>
-                    <a href="https://typingtest.fathanraedaya.com/">
-                      <img src="src/assets/images/live.svg" alt="Live Icon" class="h-[24px] lg:h-[30px] ml-[10px] fadeout">
-                    </a>
-                    <button id="typingLearnMoreBtn" class="ml-auto group transition-all duration-300 ease-in-out fadeout">
-                      <p class="font-medium text-white flex items-center gap-2 relative">
-                        <span class="relative">
-                          Learn more
-                          <span class="absolute left-0 -bottom-0.5 w-0 h-px bg-white transition-all duration-300 group-hover:w-full"></span>
-                        </span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                        </svg>
-                      </p>
-                    </button>
-                  </div>
+              <article class="project-card group relative bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-2xl border border-white/10 overflow-hidden transition-all duration-500 hover:border-white/20 hover:shadow-lg hover:shadow-blue-500/10 hover:-translate-y-1">
+                <div class="project-image relative h-48 sm:h-56 md:h-64 overflow-hidden">
+                    <img src="src/assets/images/gettyping.png" alt="GetTyping" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-90 group-hover:opacity-75 transition-opacity duration-500"></div>
                 </div>
-                <div id="typingModalOverlay" class="font-montL modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
-                  <div class="modal-content w-full max-h-[95vh] sm:max-w-[90vw] md:max-w-[800px] lg:max-w-[1000px] relative mx-auto bg-gray-800 rounded-xl text-white"> 
-                    <div class="p-4 sm:p-6 md:p-8 modal-scroll overflow-y-auto max-h-[85vh]">
-                      <div class="flex justify-between items-center mb-6">
-                        <h2 class="text-xl sm:text-2xl font-bold">Get Typing</h2>
-                        <button id="typingCloseModalBtn" class="p-1.5 hover:bg-gray-700 rounded-full transition-colors">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M18 6L6 18M6 6l12 12"/>
-                          </svg>
-                        </button>
-                      </div>
-                      
-
-                      <div class="space-y-6 sm:space-y-8">
-                        <div>
-                          <p class="text-base sm:text-lg">
-                            A MonkeyType-inspired typing test application built with vanilla JavaScript, HTML, and Tailwind CSS. 
-                            This project showcases advanced DOM manipulation and real-time calculations while providing an 
-                            intuitive interface for users to test and improve their typing speed.
-                          </p>
+            
+                <div class="project-content p-6">
+                    <div class="space-y-2 mb-4">
+                        <h3 class="text-xl font-semibold text-white tracking-tight transition-colors duration-300 group-hover:text-blue-400">GetTyping</h3>
+                        <div class="project-tech flex flex-wrap gap-2">
+                            <span class="px-2 py-1 text-xs font-medium text-yellow-300 bg-yellow-500/10 rounded-full transition-all duration-300 hover:bg-yellow-500/20">HTML</span>
+                            <span class="px-2 py-1 text-xs font-medium text-blue-300 bg-blue-500/10 rounded-full transition-all duration-300 hover:bg-blue-500/20">TailwindCSS</span>
+                            <span class="px-2 py-1 text-xs font-medium text-orange-300 bg-orange-500/10 rounded-full transition-all duration-300 hover:bg-orange-500/20">JavaScript</span>
                         </div>
-                
-                        <div class="w-full max-w-2xl mx-auto rounded-lg overflow-hidden bg-gray-900">
-                          <video class="w-full aspect-video object-cover" autoplay loop muted playsinline>
-                            <source src="src/assets/videos/gettyping.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                          </video>
-                        </div>
-                
-                        <div>
-                          <h3 class="text-lg sm:text-xl font-semibold mb-2">Key Features</h3>
-                          <ul class="list-disc pl-4 sm:pl-6 space-y-1.5 text-gray-300">
-                            <li>Customizable test duration (15, 30, 60, or 120 seconds)</li>
-                            <li>Multiple difficulty levels with varied word sets</li>
-                            <li>Real-time WPM calculation and accuracy tracking</li>
-                            <li>Character-by-character error highlighting</li>
-                            <li>Dynamic cursor movement and text scrolling</li>
-                          </ul>
-                        </div>
-                
-                        <div>
-                          <h3 class="text-lg sm:text-xl font-semibold mb-3">Code Implementation</h3>
-                          
-                          <div class="mb-4">
-                            <p class="text-gray-300 mb-2">Real-time WPM Calculation:</p>
-                            <div class="bg-gray-900 rounded-lg overflow-x-auto">
-                              <pre class="p-4 text-gray-300 text-sm whitespace-pre"><code>calculateWPM() {
-                    const timeElapsed = Date.now() - this.testStart;
-                    const words = [...document.querySelectorAll(".word")];
-                    const typedWords = words.slice(0, words.indexOf(
-                        document.querySelector(".word.current")
-                    ) + 1);
-                    
-                    const correctWords = typedWords.filter(word => {
-                        const letters = [...word.children];
-                        return letters.every(letter => 
-                            letter.className.includes("correct")
-                        );
-                    });
-                
-                    return Math.round((correctWords.length / timeElapsed) * 60000);
-                }</code></pre>
-                            </div>
-                          </div>
-                
-                          <div class="mb-4">
-                            <p class="text-gray-300 mb-2">Input Processing System:</p>
-                            <div class="bg-gray-900 rounded-lg overflow-x-auto">
-                              <pre class="p-4 text-gray-300 text-sm whitespace-pre"><code>handleLetterInput(key, currentWord, currentLetter) {
-                    if (currentLetter) {
-                        const isCorrect = key === currentLetter.innerHTML;
-                        currentLetter.classList.add(isCorrect ? "correct" : "incorrect");
-                        currentLetter.classList.remove("current");
-                        
-                        if (currentLetter.nextElementSibling) {
-                            currentLetter.nextElementSibling.classList.add("current");
-                        }
-                    } else {
-                        const extraLetter = document.createElement("span");
-                        extraLetter.innerHTML = key;
-                        extraLetter.className = "letter incorrect extra";
-                        currentWord.appendChild(extraLetter);
-                    }
-                }</code></pre>
-                            </div>
-                          </div>
-                
-                          <div>
-                            <p class="text-gray-300 mb-2">Dynamic UI Updates:</p>
-                            <div class="bg-gray-900 rounded-lg overflow-x-auto">
-                              <pre class="p-4 text-gray-300 text-sm whitespace-pre"><code>updateCursorPosition() {
-                    const nextLetter = document.querySelector(".letter.current");
-                    const nextWord = document.querySelector(".word.current");
-                    
-                    if (nextLetter) {
-                        const rect = nextLetter.getBoundingClientRect();
-                        this.cursor.style.top = `${rect.top}px`;
-                        this.cursor.style.left = `${rect.left}px`;
-                    } else if (nextWord) {
-                        const rect = nextWord.getBoundingClientRect();
-                        this.cursor.style.top = `${rect.top}px`;
-                        this.cursor.style.left = `${rect.right}px`;
-                    }
-                }</code></pre>
-                            </div>
-                          </div>
-                        </div>
-                
-                        <div>
-                          <h3 class="text-lg sm:text-xl font-semibold mb-3">Technology Stack</h3>
-                          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                            <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
-                              <span class="font-medium">JavaScript</span>
-                              <p class="text-sm text-gray-300">Core Logic</p>
-                            </div>
-                            <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
-                              <span class="font-medium">HTML</span>
-                              <p class="text-sm text-gray-300">Structure</p>
-                            </div>
-                            <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
-                              <span class="font-medium">Tailwind CSS</span>
-                              <p class="text-sm text-gray-300">Styling</p>
-                            </div>
-                          </div>
-                        </div>
-                
-                        <div>
-                          <h3 class="text-lg sm:text-xl font-semibold mb-2">Technical Highlights</h3>
-                          <ul class="list-disc pl-4 sm:pl-6 space-y-1.5 text-gray-300">
-                            <li>Implemented efficient DOM manipulation for real-time text processing and validation</li>
-                            <li>Built a robust event handling system for keyboard input management</li>
-                            <li>Developed dynamic UI updates using getBoundingClientRect() for precise cursor positioning</li>
-                            <li>Created modular class architecture for maintainable and scalable code structure</li>
-                            <li>Designed flexible difficulty system using separate word arrays for easy customization</li>
-                          </ul>
-                        </div>
-                
-                        <div>
-                          <h3 class="text-lg sm:text-xl font-semibold mb-2">Future Development</h3>
-                          <ul class="list-disc pl-4 sm:pl-6 space-y-1.5 text-gray-300">
-                            <li>Leaderboard and user accounts</li>
-                            <li>Performance statistics and progress tracking</li>
-                            <li>Custom word lists and programming snippets</li>
-                            <li>Additional practice modes and challenges</li>
-                          </ul>
-                        </div>
-                
-                        <div>
-                          <h3 class="text-lg sm:text-xl font-semibold mb-2">Project Links</h3>
-                          <p class="text-gray-300">
-                            View the source code on 
-                            <a href="https://github.com/FathanRaedaya/typing-test" 
-                               class="text-white relative inline-block hover:after:w-full after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[1px] after:bg-white after:transition-all after:duration-300">
-                              GitHub
-                            </a>
-                            or try the 
-                            <a href="https://typingtest.fathanraedaya.com/" 
-                               class="text-white relative inline-block hover:after:w-full after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[1px] after:bg-white after:transition-all after:duration-300">
-                              live application
-                            </a>.
-                          </p>
-                        </div>
-                      </div>
                     </div>
-                  </div>
+            
+                    <p class="text-gray-300 text-sm mb-6 transition-colors duration-300 group-hover:text-gray-200">
+                        A website to practice, improve and test your typing speed. Change the time and difficulty to challenge yourself.
+                    </p>
+            
+                    <div class="flex items-center justify-between">
+                        <div class="flex gap-4">
+                            <a href="https://github.com/FathanRaedaya/typing-test" class="group/link flex items-center gap-2 text-gray-400 hover:text-white transition-all duration-300 hover:scale-105">
+                                <svg class="w-5 h-5 transition-colors duration-300 group-hover/link:text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                                <span class="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-blue-400 after:transition-all after:duration-300 group-hover/link:after:w-full">View Code</span>
+                            </a>
+                            <a href="https://typingtest.fathanraedaya.com" class="group/link flex items-center gap-2 text-gray-400 hover:text-white transition-all duration-300 hover:scale-105">
+                                <svg class="w-5 h-5 transition-colors duration-300 group-hover/link:text-blue-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                                </svg>
+                                <span class="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-blue-400 after:transition-all after:duration-300 group-hover/link:after:w-full">Live Demo</span>
+                            </a>
+                        </div>
+            
+                        <button id="typingLearnMoreBtn" class="group/btn flex items-center gap-2 text-white relative hover:scale-105 transition-all duration-300">
+                            <span class="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-blue-400 after:transition-all after:duration-300 group-hover/btn:after:w-full">
+                                Learn more
+                            </span>
+                            <svg class="w-4 h-4 transition-all duration-300 group-hover/btn:translate-x-1 group-hover/btn:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
               </article>
             </div>
           </div>
 		    </section>
+
+        <div id="budgetModalOverlay" class="font-montL modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
+          <div class="modal-content w-full max-h-[95vh] sm:max-w-[90vw] md:max-w-[800px] lg:max-w-[1000px] relative mx-auto bg-gray-800 rounded-xl text-white"> 
+            <div class="p-4 sm:p-6 md:p-8 modal-scroll overflow-y-auto max-h-[85vh]">
+              <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl sm:text-2xl font-bold">Budget Tracker</h2>
+                <button id="budgetCloseModalBtn" class="p-1.5 hover:bg-gray-700 rounded-full transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                  </svg>
+                </button>
+              </div>
+              
+              <div class="space-y-6 sm:space-y-8">
+                <div>
+                  <p class="text-base sm:text-lg">
+                    A Flask-based web application for tracking personal finances, featuring income and expense management, goal setting, 
+                    and real-time budget calculations. Built with Python, Flask, SQLAlchemy, and SQLite, this application demonstrates 
+                    practical implementation of CRUD operations and database management.
+                  </p>
+                </div>
+        
+                <div class="w-full max-w-2xl mx-auto rounded-lg overflow-hidden bg-gray-900">
+                  <video class="w-full aspect-video object-cover" autoplay loop muted playsinline>
+                    <source src="src/assets/videos/budget-tracker.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+        
+                <div>
+                  <h3 class="text-lg sm:text-xl font-semibold mb-2">Key Features</h3>
+                  <ul class="list-disc pl-4 sm:pl-6 space-y-1.5 text-gray-300">
+                    <li>Income and expense tracking</li>
+                    <li>Financial goal setting and progress monitoring</li>
+                    <li>Real-time budget calculations and balance tracking</li>
+                    <li>Duplicate entry prevention</li>
+                    <li>User feedback system with Flash messages</li>
+                  </ul>
+                </div>
+        
+                <div>
+                  <h3 class="text-lg sm:text-xl font-semibold mb-3">Code Implementation</h3>
+                  
+                  <div class="mb-4">
+                    <p class="text-gray-300 mb-2">SQLAlchemy Models:</p>
+                    <div class="bg-gray-900 rounded-lg overflow-x-auto">
+                      <pre class="p-4 text-gray-300 text-sm whitespace-pre"><code>from app import db
+        
+        class Income(db.Model):
+            id = db.Column(db.Integer, primary_key=True)
+            name = db.Column(db.String(30), nullable=False)
+            amount = db.Column(db.Float, nullable=False)
+        
+        class Expense(db.Model):
+            id = db.Column(db.Integer, primary_key=True)
+            name = db.Column(db.String(30), nullable=False)
+            amount = db.Column(db.Float, nullable=False)
+        
+        class Goal(db.Model):
+            id = db.Column(db.Integer, primary_key=True)
+            name = db.Column(db.String(30))
+            value = db.Column(db.Float)
+        
+        def init_db():
+            db.create_all()
+        
+        if __name__ == '__main__':
+            init_db()</code></pre>
+                    </div>
+                  </div>
+        
+                  <div class="mb-4">
+                    <p class="text-gray-300 mb-2">Form Classes with Validation:</p>
+                    <div class="bg-gray-900 rounded-lg overflow-x-auto">
+                      <pre class="p-4 text-gray-300 text-sm whitespace-pre"><code>from flask_wtf import FlaskForm
+        from wtforms import StringField, FloatField, DecimalField
+        from wtforms.validators import DataRequired, InputRequired, Length, NumberRange
+        
+        class IncomeForm(FlaskForm):
+            name = StringField('Income Name', validators=[
+                DataRequired(),
+                Length(max=30)
+            ])
+            amount = FloatField('Amount', validators=[
+                DataRequired(),
+                NumberRange(min=0, max=9999999999999.99)
+            ])
+        
+        class ExpenseForm(FlaskForm):
+            name = StringField('Expense Name', validators=[
+                DataRequired(),
+                Length(max=30)
+            ])
+            amount = FloatField('Amount', validators=[
+                DataRequired(),
+                NumberRange(min=0, max=9999999999999.99)
+            ])
+        
+        class GoalForm(FlaskForm):
+            name = StringField('Name', validators=[
+                DataRequired(),
+                Length(max=30)
+            ])
+            value = DecimalField('Value', validators=[
+                InputRequired(),
+                NumberRange(min=0, max=9999999999999.99)
+            ])</code></pre>
+                    </div>
+                  </div>
+        
+                  <div class="mb-4">
+                    <p class="text-gray-300 mb-2">Main Dashboard Route Handler:</p>
+                    <div class="bg-gray-900 rounded-lg overflow-x-auto">
+                      <pre class="p-4 text-gray-300 text-sm whitespace-pre"><code>@app.route('/')
+        def index():
+            # Calculate total income and expenses
+            total_income = db.session.query(
+                db.func.sum(Income.amount)
+            ).scalar() or 0
+            total_expense = db.session.query(
+                db.func.sum(Expense.amount)
+            ).scalar() or 0
+        
+            # Fetch current goal
+            temp_goal = Goal.query.first()
+            goal_name = ""
+            goal_value = ""
+            progress = ""
+        
+            if temp_goal:
+                goal_name = temp_goal.name
+                goal_value = temp_goal.value
+                progress = total_income - total_expense
+        
+            return render_template('index.html',
+                total_income=total_income,
+                total_expense=total_expense,
+                goal_name=goal_name,
+                goal_value=goal_value,
+                progress=progress
+            )</code></pre>
+                    </div>
+                  </div>
+        
+                  <div class="mb-4">
+                    <p class="text-gray-300 mb-2">Income Management System:</p>
+                    <div class="bg-gray-900 rounded-lg overflow-x-auto">
+                      <pre class="p-4 text-gray-300 text-sm whitespace-pre"><code>@app.route('/income', methods=['GET', 'POST'])
+        def income():
+            form = IncomeForm()
+            
+            if form.validate_on_submit():
+                name = form.name.data
+                amount = form.amount.data
+        
+                # Check for duplicates
+                dupe_income = Income.query.filter(
+                    func.lower(Income.name) == func.lower(name)
+                ).first()
+                
+                if dupe_income:
+                    flash('Invalid name (duplicate)', 'danger')
+                    return redirect(url_for('income'))
+        
+                # Add new income
+                new_income = Income(name=name, amount=amount)
+                db.session.add(new_income)
+                db.session.commit()
+        
+                flash('Income added successfully', 'success')
+                return redirect(url_for('income'))
+        
+            incomes = Income.query.all()
+            return render_template('income.html', 
+                form=form, 
+                incomes=incomes
+            )</code></pre>
+                    </div>
+                  </div>
+        
+                  <div class="mb-4">
+                    <p class="text-gray-300 mb-2">Goal Management System:</p>
+                    <div class="bg-gray-900 rounded-lg overflow-x-auto">
+                      <pre class="p-4 text-gray-300 text-sm whitespace-pre"><code>@app.route('/goal', methods=['GET', 'POST'])
+        def goal():
+            form = GoalForm()
+        
+            if form.validate_on_submit():
+                name = form.name.data
+                value = form.value.data
+        
+                # Ensure single goal
+                dupe_goal = Goal.query.first()
+                if dupe_goal:
+                    flash('A goal has already been created', 'warning')
+                    return redirect(url_for('goal'))
+        
+                # Create new goal
+                temp_goal = Goal(name=name, value=value)
+                db.session.add(temp_goal)
+                db.session.commit()
+        
+                flash('Goal created successfully', 'success')
+                return redirect(url_for('goal'))
+        
+            current_goal = Goal.query.first()
+            return render_template('goal.html', 
+                form=form, 
+                current_goal=current_goal
+            )</code></pre>
+                    </div>
+                  </div>
+                </div>
+        
+                <div>
+                  <h3 class="text-lg sm:text-xl font-semibold mb-3">Technology Stack</h3>
+                  <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                    <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
+                      <span class="font-medium">Python/Flask</span>
+                      <p class="text-sm text-gray-300">Backend Framework</p>
+                    </div>
+                    <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
+                      <span class="font-medium">SQLAlchemy</span>
+                      <p class="text-sm text-gray-300">ORM</p>
+                    </div>
+                    <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
+                      <span class="font-medium">SQLite</span>
+                      <p class="text-sm text-gray-300">Database</p>
+                    </div>
+                    <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
+                      <span class="font-medium">HTML/CSS</span>
+                      <p class="text-sm text-gray-300">Frontend</p>
+                    </div>
+                    <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
+                      <span class="font-medium">WTForms</span>
+                      <p class="text-sm text-gray-300">Form Handling</p>
+                    </div>
+                  </div>
+                </div>
+        
+                <div>
+                  <h3 class="text-lg sm:text-xl font-semibold mb-2">Technical Highlights</h3>
+                  <ul class="list-disc pl-4 sm:pl-6 space-y-1.5 text-gray-300">
+                    <li>Well-organized code structure using Flask framework</li>
+                    <li>Efficient database management for storing and retrieving data</li>
+                    <li>Clear separation between different parts of the application for better maintenance</li>
+                    <li>Smart database queries for quick calculation of totals and summaries</li>
+                  </ul>
+                </div>
+        
+                <div>
+                  <h3 class="text-lg sm:text-xl font-semibold mb-2">Project Links</h3>
+                  <p class="text-gray-300">
+                    View the complete source code on 
+                    <a href="#" class="text-white relative inline-block hover:after:w-full after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[1px] after:bg-white after:transition-all after:duration-300">
+                      GitHub
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="typingModalOverlay" class="font-montL modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
+          <div class="modal-content w-full max-h-[95vh] sm:max-w-[90vw] md:max-w-[800px] lg:max-w-[1000px] relative mx-auto bg-gray-800 rounded-xl text-white"> 
+            <div class="p-4 sm:p-6 md:p-8 modal-scroll overflow-y-auto max-h-[85vh]">
+              <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl sm:text-2xl font-bold">Get Typing</h2>
+                <button id="typingCloseModalBtn" class="p-1.5 hover:bg-gray-700 rounded-full transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                  </svg>
+                </button>
+              </div>
+              
+
+              <div class="space-y-6 sm:space-y-8">
+                <div>
+                  <p class="text-base sm:text-lg">
+                    A MonkeyType-inspired typing test application built with vanilla JavaScript, HTML, and Tailwind CSS. 
+                    This project showcases advanced DOM manipulation and real-time calculations while providing an 
+                    intuitive interface for users to test and improve their typing speed.
+                  </p>
+                </div>
+        
+                <div class="w-full max-w-2xl mx-auto rounded-lg overflow-hidden bg-gray-900">
+                  <video class="w-full aspect-video object-cover" autoplay loop muted playsinline>
+                    <source src="src/assets/videos/gettyping.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+        
+                <div>
+                  <h3 class="text-lg sm:text-xl font-semibold mb-2">Key Features</h3>
+                  <ul class="list-disc pl-4 sm:pl-6 space-y-1.5 text-gray-300">
+                    <li>Customizable test duration (15, 30, 60, or 120 seconds)</li>
+                    <li>Multiple difficulty levels with varied word sets</li>
+                    <li>Real-time WPM calculation and accuracy tracking</li>
+                    <li>Character-by-character error highlighting</li>
+                    <li>Dynamic cursor movement and text scrolling</li>
+                  </ul>
+                </div>
+        
+                <div>
+                  <h3 class="text-lg sm:text-xl font-semibold mb-3">Code Implementation</h3>
+                  
+                  <div class="mb-4">
+                    <p class="text-gray-300 mb-2">Real-time WPM Calculation:</p>
+                    <div class="bg-gray-900 rounded-lg overflow-x-auto">
+                      <pre class="p-4 text-gray-300 text-sm whitespace-pre"><code>calculateWPM() {
+            const timeElapsed = Date.now() - this.testStart;
+            const words = [...document.querySelectorAll(".word")];
+            const typedWords = words.slice(0, words.indexOf(
+                document.querySelector(".word.current")
+            ) + 1);
+            
+            const correctWords = typedWords.filter(word => {
+                const letters = [...word.children];
+                return letters.every(letter => 
+                    letter.className.includes("correct")
+                );
+            });
+        
+            return Math.round((correctWords.length / timeElapsed) * 60000);
+        }</code></pre>
+                    </div>
+                  </div>
+        
+                  <div class="mb-4">
+                    <p class="text-gray-300 mb-2">Input Processing System:</p>
+                    <div class="bg-gray-900 rounded-lg overflow-x-auto">
+                      <pre class="p-4 text-gray-300 text-sm whitespace-pre"><code>handleLetterInput(key, currentWord, currentLetter) {
+            if (currentLetter) {
+                const isCorrect = key === currentLetter.innerHTML;
+                currentLetter.classList.add(isCorrect ? "correct" : "incorrect");
+                currentLetter.classList.remove("current");
+                
+                if (currentLetter.nextElementSibling) {
+                    currentLetter.nextElementSibling.classList.add("current");
+                }
+            } else {
+                const extraLetter = document.createElement("span");
+                extraLetter.innerHTML = key;
+                extraLetter.className = "letter incorrect extra";
+                currentWord.appendChild(extraLetter);
+            }
+        }</code></pre>
+                    </div>
+                  </div>
+        
+                  <div>
+                    <p class="text-gray-300 mb-2">Dynamic UI Updates:</p>
+                    <div class="bg-gray-900 rounded-lg overflow-x-auto">
+                      <pre class="p-4 text-gray-300 text-sm whitespace-pre"><code>updateCursorPosition() {
+            const nextLetter = document.querySelector(".letter.current");
+            const nextWord = document.querySelector(".word.current");
+            
+            if (nextLetter) {
+                const rect = nextLetter.getBoundingClientRect();
+                this.cursor.style.top = `${rect.top}px`;
+                this.cursor.style.left = `${rect.left}px`;
+            } else if (nextWord) {
+                const rect = nextWord.getBoundingClientRect();
+                this.cursor.style.top = `${rect.top}px`;
+                this.cursor.style.left = `${rect.right}px`;
+            }
+        }</code></pre>
+                    </div>
+                  </div>
+                </div>
+        
+                <div>
+                  <h3 class="text-lg sm:text-xl font-semibold mb-3">Technology Stack</h3>
+                  <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
+                      <span class="font-medium">JavaScript</span>
+                      <p class="text-sm text-gray-300">Core Logic</p>
+                    </div>
+                    <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
+                      <span class="font-medium">HTML</span>
+                      <p class="text-sm text-gray-300">Structure</p>
+                    </div>
+                    <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
+                      <span class="font-medium">Tailwind CSS</span>
+                      <p class="text-sm text-gray-300">Styling</p>
+                    </div>
+                  </div>
+                </div>
+        
+                <div>
+                  <h3 class="text-lg sm:text-xl font-semibold mb-2">Technical Highlights</h3>
+                  <ul class="list-disc pl-4 sm:pl-6 space-y-1.5 text-gray-300">
+                    <li>Implemented efficient DOM manipulation for real-time text processing and validation</li>
+                    <li>Built a robust event handling system for keyboard input management</li>
+                    <li>Developed dynamic UI updates using getBoundingClientRect() for precise cursor positioning</li>
+                    <li>Created modular class architecture for maintainable and scalable code structure</li>
+                    <li>Designed flexible difficulty system using separate word arrays for easy customization</li>
+                  </ul>
+                </div>
+        
+                <div>
+                  <h3 class="text-lg sm:text-xl font-semibold mb-2">Future Development</h3>
+                  <ul class="list-disc pl-4 sm:pl-6 space-y-1.5 text-gray-300">
+                    <li>Leaderboard and user accounts</li>
+                    <li>Performance statistics and progress tracking</li>
+                    <li>Custom word lists and programming snippets</li>
+                    <li>Additional practice modes and challenges</li>
+                  </ul>
+                </div>
+        
+                <div>
+                  <h3 class="text-lg sm:text-xl font-semibold mb-2">Project Links</h3>
+                  <p class="text-gray-300">
+                    View the source code on 
+                    <a href="https://github.com/FathanRaedaya/typing-test" 
+                       class="text-white relative inline-block hover:after:w-full after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[1px] after:bg-white after:transition-all after:duration-300">
+                      GitHub
+                    </a>
+                    or try the 
+                    <a href="https://typingtest.fathanraedaya.com/" 
+                       class="text-white relative inline-block hover:after:w-full after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[1px] after:bg-white after:transition-all after:duration-300">
+                      live application
+                    </a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <section class="w-1/2 mx-auto relative flex flex-col md:flex-row justify-between items-center" id="contact">
           <p class="contact-text font-montM text-[9px] text-center text-white opacity-80 m-0 md:my-10 slide-in-left">
