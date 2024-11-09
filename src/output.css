@@ -1609,7 +1609,6 @@ video {
   }
 
   .grid-projects {
-    grid-template-columns: 1fr !important;
     gap: 2rem;
   }
 
