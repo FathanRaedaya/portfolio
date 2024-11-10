@@ -7,7 +7,7 @@
 }
 
 ::-webkit-scrollbar-track {
-	background: #23272a;
+	background: #18181b;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -49,37 +49,18 @@
 	transition: ease-in 0.3s;
 }
 
-.animate-main {
-    height: 65px;
-    overflow: hidden;
-    display: inline-block;
-    font-family: lmr, arial;
-}
-  
-.animate-main div div {
-padding: 15px 10px 15px 0px;
-height: 60px;
-margin-bottom: 50px;
-display: inline-block;
-color: #99aab5;
+.home-text h2,
+.home-text p {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: opacity 1s ease, visibility 1s ease, transform 1s ease;
 }
 
-.animate-main div:first-child {
-    animation: rotate 7s infinite;
-}
-  
-@keyframes rotate {
-0%  {margin-top: -196px;}
-10% {margin-top: -10px;}
-20% {margin-top: -10px;}
-30% {margin-top: -10px;}
-40% {margin-top: -10px;}
-50% {margin-top: -101px;}
-60% {margin-top: -101px;}
-70% {margin-top: -101px;}
-80% {margin-top: -196px;}
-90% {margin-top: -196px;}
-100% {margin-top: -196px;}
+.fade-in {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0) !important;
 }
 
 .loading.in {

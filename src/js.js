@@ -55,7 +55,7 @@ window.addEventListener('load', function() {
 	  navbar.addEventListener('mouseout', function() {
 		navbar.style.opacity = '0.7';
 	  });
-	}, 2200); 
+	}, 2050); 
 });
 
 window.addEventListener('load', function() {
@@ -66,8 +66,23 @@ window.addEventListener('load', function() {
         icon.style.visibility = 'visible';  
         icon.style.opacity = '1';          
       });
-    }, 2500); 
-  });
+    }, 2050); 
+});
+
+window.addEventListener('load', function() {
+    setTimeout(function() {
+      const homeTitle = document.querySelector('.home-text h2');
+      const homeDescription = document.querySelector('.home-text p');
+      
+      homeTitle.classList.add('fade-in');
+      
+      setTimeout(function() {
+        homeDescription.classList.add('fade-in');
+      }, 0);
+      
+    }, 2050); 
+});
+
 
   document.addEventListener('DOMContentLoaded', function() {
 
@@ -266,3 +281,5 @@ setTimeout(function() {
     
 }, 2200); 
 });
+
+
