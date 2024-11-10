@@ -1262,10 +1262,6 @@ video {
   font-size: 15px;
 }
 
-.text-\[32px\] {
-  font-size: 32px;
-}
-
 .text-\[40px\] {
   font-size: 40px;
 }
@@ -1714,7 +1710,6 @@ video {
   .projects-heading {
     text-align: center;
     padding-top: 10%;
-    font-size: 32px;
   }
 
   .project-info {
@@ -1775,10 +1770,6 @@ video {
   .projects-container {
     width: 100%;
     padding: 1rem;
-  }
-
-  .projects-heading {
-    font-size: 28px;
   }
 
   .project-image {
