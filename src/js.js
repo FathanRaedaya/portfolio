@@ -30,11 +30,11 @@ window.addEventListener('DOMContentLoaded', ()=>{
 					span.classList.add('out');
 				}, (idx + 1) * 10)
 			})
-		}, 1750);
+		}, 1500);
 
 		setTimeout(()=>{
 			introduction.style.top = '-100vh';
-		}, 1750)
+		}, 1500)
 	})
 })
 
@@ -55,7 +55,7 @@ window.addEventListener('load', function() {
 	  navbar.addEventListener('mouseout', function() {
 		navbar.style.opacity = '0.7';
 	  });
-	}, 2050); 
+	}, 1500); 
 });
 
 window.addEventListener('load', function() {
@@ -66,7 +66,7 @@ window.addEventListener('load', function() {
         icon.style.visibility = 'visible';  
         icon.style.opacity = '1';          
       });
-    }, 2050); 
+    }, 1500); 
 });
 
 window.addEventListener('load', function() {
@@ -80,7 +80,7 @@ window.addEventListener('load', function() {
         homeDescription.classList.add('fade-in');
       }, 0);
       
-    }, 2050); 
+    }, 1500); 
 });
 
 
@@ -173,6 +173,10 @@ const routerModalOverlay = document.getElementById('routerModalOverlay');
 const routerLearnMoreBtn = document.getElementById('routerLearnMoreBtn');
 const routerCloseModalBtn = document.getElementById('routerCloseModalBtn');
 
+const finalModalOverlay = document.getElementById('finalModalOverlay');
+const finalLearnMoreBtn = document.getElementById('finalLearnMoreBtn');
+const finalCloseModalBtn = document.getElementById('finalCloseModalBtn');
+
 function openModal(modalOverlay) {
     if (!modalOverlay) return; 
     
@@ -252,6 +256,25 @@ if (routerModalOverlay) {
     });
 }
 
+if (finalLearnMoreBtn) {
+    finalLearnMoreBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openModal(finalModalOverlay);
+    });
+}
+
+if (finalCloseModalBtn) {
+    finalCloseModalBtn.addEventListener('click', () => closeModal(finalModalOverlay));
+}
+
+if (finalModalOverlay) {
+    finalModalOverlay.addEventListener('click', (e) => {
+        if (e.target === finalModalOverlay) {
+            closeModal(finalModalOverlay);
+        }
+    });
+}
+
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         if (budgetModalOverlay && budgetModalOverlay.classList.contains('active')) {
@@ -307,5 +330,3 @@ setTimeout(function() {
     
 }, 2200); 
 });
-
-

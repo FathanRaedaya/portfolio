@@ -39,7 +39,7 @@
     </header>
     
     <main class="relative w-full min-h-screen overflow-x-hidden">
-      <section class="introduction fixed z-[100] top-0 left-0 w-full h-screen bg-gradient-to-br from-[#231630] via-[#171019] to-black transition-all duration-1000">            
+      <section class="introduction fixed z-[100] top-0 left-0 w-full h-screen bg-gradient-to-t from-black/20 to-transparent transition-all duration-1000">            
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-4">
           <h1 class="intro-text font-mont text-white text-[500%] tracking-[-5px] flex justify-center flex-wrap">
             <span class="loading relative inline-block -bottom-[20px] opacity-0 p-2.5">Hello</span>
@@ -51,11 +51,11 @@
       <section class="min-h-screen w-full flex flex-col justify-center items-center text-center px-4" id="home">
         <div class="container max-w-4xl mx-auto px-4 home-text">
           <h2 class="font-it text-[60px] md:text-[60px] sm:text-[45px] font-bold text-white mb-3 welcome">
-            Hi, it's <span class="text-[#99aab5]">Fathan</span>
+            Hey, I'm<span class="text-[#99aab5]"> Fathan</span>  
           </h2>
           
           <p class="font-[montM] text-[15px] text-white max-w-2xl mx-auto mb-6 px-4">
-           Computer Science graduate from the University of Leeds <br> Incoming master's student.
+            Mastering CS @ Uni of Leeds | BSc Computer Science Graduate
           </p>
           
           <div class="w-full flex justify-center items-center">
@@ -94,15 +94,22 @@
 
       <section class="about-container h-[50vh] w-1/2 mx-auto relative" id="about">
           <h2 class="about-heading font-it text-[40px] text-white text-left pt-[10%] tracking-[-2px] font-normal slide-in-left"><span class="small">01 </span><span class="text-customGrey">about </span>me</h2>
-          <img src="src/assets/images/me1.jpg" alt="Fathan Raedaya picture" class="portrait max-w-[300px] max-h-[300px] rounded-[30px] float-right ml-5 mt-5 slide-in-right">
+          <img src="src/assets/images/pfp.jpg" alt="Fathan Raedaya picture" class="portrait max-w-[300px] max-h-[300px] rounded-[30px] float-right ml-5 mt-5 slide-in-right">
           <p class="about-text slide-in-left">
-                I am a fresh computer science graduate from the <span class="text-customGrey">University of Leeds</span> progressing to postgraduate studies.<br><br>
-                I am passionate about designing and developing software applications and websites which helped me choose my final year project which focused on improving
+                I'm a computer science graduate from the <span class="text-customGrey">University of Leeds</span>, currently pursuing my MSc in Advanced Computer Science.<br><br>
+                I'm passionate about designing and developing software applications and websites, which is why I chose a final year project focused on improving
                 the accessibility and inclusivity of the University of Leeds's portal by using recommender systems and research-based design principles.
           </p>
           <p class="about-text slide-in-left">
-              I have prominently worked with: <span class="text-customGrey">Python</span>, <span class="text-customGrey">Java</span>, <span class="text-customGrey">JavaScript</span>, <span class="text-customGrey">C</span></span>. 
-              Visit my <a class="text-[#b1e9f0] relative inline-block hover:after:w-full after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[1px] after:bg-[#b1e9f0] after:transition-all after:duration-300" href="https://github.com/FathanRaedaya">GitHub profile</a> to see some of the projects I have worked on.
+              I've got experience with <span class="text-customGrey">Python</span>, <span class="text-customGrey">Java</span>, <span class="text-customGrey">JavaScript</span>, <span class="text-customGrey">C</span></span>. 
+              Check out my projects below or visit my 
+              <a class="text-[#b1e9f0] relative inline-block 
+              after:absolute after:left-0 after:bottom-0.5 
+              after:w-0 after:h-[1px] after:bg-[#b1e9f0] 
+              after:transition-all after:duration-300 
+              hover:after:w-full" 
+              href="https://github.com/FathanRaedaya">
+              GitHub profile</a> to see more.
           </p>
       </section>
 
@@ -138,70 +145,74 @@
                               <svg class="w-5 h-5 transition-colors duration-300 group-hover/link:text-blue-400" fill="currentColor" viewBox="0 0 24 24">
                                   <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
                               </svg>
-                              <span class="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-blue-400 after:transition-all after:duration-300 group-hover/link:after:w-full">View Code</span>
+                              <span class="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-blue-400 after:transition-all after:duration-300">View Code</span>
                           </a>
                           <a href="https://typingtest.fathanraedaya.com" class="group/link flex items-center gap-2 text-gray-400 hover:text-white transition-all duration-300 hover:scale-105">
                               <svg class="w-5 h-5 transition-colors duration-300 group-hover/link:text-blue-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                   <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
                               </svg>
-                              <span class="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-blue-400 after:transition-all after:duration-300 group-hover/link:after:w-full">Live Demo</span>
+                              <span class="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-blue-400 after:transition-all after:duration-300">Live Demo</span>
                           </a>
                       </div>
           
-                      <button id="typingLearnMoreBtn" class="group/btn flex items-center gap-2 text-white relative hover:scale-105 transition-all duration-300">
-                          <span class="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-blue-400 after:transition-all after:duration-300 group-hover/btn:after:w-full">
-                              Learn more
-                          </span>
-                          <svg class="w-4 h-4 transition-all duration-300 group-hover/btn:translate-x-1 group-hover/btn:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                          </svg>
-                      </button>
+                      <button id="typingLearnMoreBtn" class="group/btn flex items-center gap-2 text-white relative">
+                        <span class="text-sm font-medium relative 
+                              after:absolute after:bottom-0 after:left-0 
+                              after:w-0 after:h-px after:bg-white 
+                              after:transition-all after:duration-300 
+                              group-hover/btn:after:w-full">
+                          Learn more
+                        </span>
+                        <svg class="relative top-[3px]" aria-hidden="true" width="16" height="16" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="5 5 22 5 22 22" />
+                          <line x1="5" y1="22" x2="22" y2="5" />
+                        </svg>
+                      </button>                      
                   </div>
-                </div>
+              </div>
             </article>
             <article class="project-card slide-in-left group relative bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-2xl border border-white/10 overflow-hidden transition-all duration-500 hover:border-white/20 hover:shadow-lg hover:shadow-blue-500/10 hover:-translate-y-1">
               <div class="project-image relative h-48 sm:h-56 md:h-64 overflow-hidden">
-                  <img src="src/assets/images/router.png" alt="Project" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                  <img src="src/assets/images/fyp.png" alt="Project" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                   <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-90 group-hover:opacity-75 transition-opacity duration-500"></div>
               </div>
       
-          <div class="project-content p-6">
-              <div class="space-y-2 mb-4">
-                  <h3 class="text-xl font-semibold text-white tracking-tight transition-colors duration-300 group-hover:text-blue-400">Router - GPX</h3>
-                  <div class="project-tech flex flex-wrap gap-2">
-                      <span class="px-2 py-1 text-xs font-medium text-yellow-300 bg-yellow-500/10 rounded-full transition-all duration-300 hover:bg-blue-500/20">Python</span>
-                      <span class="px-2 py-1 text-xs font-medium text-red-300 bg-red-500/10 rounded-full transition-all duration-300 hover:bg-blue-500/20">Flask</span>
-                      <span class="px-2 py-1 text-xs font-medium text-green-300 bg-green-500/10 rounded-full transition-all duration-300 hover:bg-blue-500/20">JavaScript</span>
-                      <span class="px-2 py-1 text-xs font-medium text-purple-300 bg-purple-500/10 rounded-full transition-all duration-300 hover:bg-blue-500/20">SQLite</span>
+            <div class="project-content p-6">
+                <div class="space-y-2 mb-4">
+                    <h3 class="text-xl font-semibold text-white tracking-tight transition-colors duration-300 group-hover:text-blue-400">University Module Portal</h3>
+                    <div class="project-tech flex flex-wrap gap-2">
+                        <span class="px-2 py-1 text-xs font-medium text-yellow-300 bg-yellow-500/10 rounded-full transition-all duration-300 hover:bg-blue-500/20">React</span>
+                        <span class="px-2 py-1 text-xs font-medium text-red-300 bg-red-500/10 rounded-full transition-all duration-300 hover:bg-blue-500/20">JavaScript</span>
+                        <span class="px-2 py-1 text-xs font-medium text-green-300 bg-green-500/10 rounded-full transition-all duration-300 hover:bg-blue-500/20">HTML</span>
+                        <span class="px-2 py-1 text-xs font-medium text-purple-300 bg-purple-500/10 rounded-full transition-all duration-300 hover:bg-blue-500/20">SQLite</span>
 
-                  </div>
+                    </div>
+                </div>
+        
+                <p class="text-gray-300 text-sm mb-6 transition-colors duration-300 group-hover:text-gray-200">
+                    An improved module portal system for the University of Leeds with recommender systems and accessibility and customisation features.
+                </p>
+        
+                <div class="flex items-center justify-between">
+                    <div class="flex gap-4">
+                    </div>
+        
+                    <button id="finalLearnMoreBtn" class="group/btn flex items-center gap-2 text-white relative">
+                      <span class="text-sm font-medium relative 
+                            after:absolute after:bottom-0 after:left-0 
+                            after:w-0 after:h-px after:bg-white 
+                            after:transition-all after:duration-300 
+                            group-hover/btn:after:w-full">
+                            Learn more
+                        </span>
+                        <svg class="relative top-[3px]" aria-hidden="true" width="16" height="16" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="5 5 22 5 22 22" />
+                          <line x1="5" y1="22" x2="22" y2="5" />
+                        </svg>                                                                                                                  
+                    </button>
+                </div>
               </div>
-      
-              <p class="text-gray-300 text-sm mb-6 transition-colors duration-300 group-hover:text-gray-200">
-                  A web application to save and view you and your friend's routes all over the world (offline).
-              </p>
-      
-              <div class="flex items-center justify-between">
-                  <div class="flex gap-4">
-                      <a href="https://github.com/FathanRaedaya/router" class="group/link flex items-center gap-2 text-gray-400 hover:text-white transition-all duration-300 hover:scale-105">
-                          <svg class="w-5 h-5 transition-colors duration-300 group-hover/link:text-blue-400" fill="currentColor" viewBox="0 0 24 24">
-                              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                          </svg>
-                          <span class="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-blue-400 after:transition-all after:duration-300 group-hover/link:after:w-full">View Code</span>
-                      </a>
-                  </div>
-      
-                  <button id="routerLearnMoreBtn" class="learn-more-btn group/btn flex items-center gap-2 text-white relative hover:scale-105 transition-all duration-300">
-                      <span class="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-blue-400 after:transition-all after:duration-300 group-hover/btn:after:w-full">
-                          Learn more
-                      </span>
-                      <svg class="w-4 h-4 transition-all duration-300 group-hover/btn:translate-x-1 group-hover/btn:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                      </svg>
-                  </button>
-              </div>
-            </div>
-          </article>
+            </article>
         </div>
         <div class="grid-projects grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mt-8 md:mt-12">
           <article class="project-card slide-in-left group relative bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-2xl border border-white/10 overflow-hidden transition-all duration-500 hover:border-white/20 hover:shadow-lg hover:shadow-blue-500/10 hover:-translate-y-1">
@@ -230,25 +241,76 @@
                         <svg class="w-5 h-5 transition-colors duration-300 group-hover/link:text-blue-400" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
                         </svg>
-                        <span class="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-blue-400 after:transition-all after:duration-300 group-hover/link:after:w-full">View Code</span>
+                        <span class="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-blue-400 after:transition-all after:duration-300">View Code</span>
                     </a>
                 </div>
     
-                <button id="budgetLearnMoreBtn" class="learn-more-btn group/btn flex items-center gap-2 text-white relative hover:scale-105 transition-all duration-300">
-                    <span class="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-blue-400 after:transition-all after:duration-300 group-hover/btn:after:w-full">
+                <button id="budgetLearnMoreBtn" class="group/btn flex items-center gap-2 text-white relative">
+                  <span class="text-sm font-medium relative 
+                        after:absolute after:bottom-0 after:left-0 
+                        after:w-0 after:h-px after:bg-white 
+                        after:transition-all after:duration-300 
+                        group-hover/btn:after:w-full">
                         Learn more
                     </span>
-                    <svg class="w-4 h-4 transition-all duration-300 group-hover/btn:translate-x-1 group-hover/btn:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    <svg class="relative top-[3px]" aria-hidden="true" width="16" height="16" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="5 5 22 5 22 22" />
+                      <line x1="5" y1="22" x2="22" y2="5" />
                     </svg>
                 </button>
             </div>
           </div>
         </article>
+        <article class="project-card slide-in-left group relative bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-2xl border border-white/10 overflow-hidden transition-all duration-500 hover:border-white/20 hover:shadow-lg hover:shadow-blue-500/10 hover:-translate-y-1">
+              <div class="project-image relative h-48 sm:h-56 md:h-64 overflow-hidden">
+                  <img src="src/assets/images/router.png" alt="Project" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                  <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-90 group-hover:opacity-75 transition-opacity duration-500"></div>
+              </div>
+      
+          <div class="project-content p-6">
+              <div class="space-y-2 mb-4">
+                  <h3 class="text-xl font-semibold text-white tracking-tight transition-colors duration-300 group-hover:text-blue-400">Router - GPX</h3>
+                  <div class="project-tech flex flex-wrap gap-2">
+                      <span class="px-2 py-1 text-xs font-medium text-yellow-300 bg-yellow-500/10 rounded-full transition-all duration-300 hover:bg-blue-500/20">Python</span>
+                      <span class="px-2 py-1 text-xs font-medium text-red-300 bg-red-500/10 rounded-full transition-all duration-300 hover:bg-blue-500/20">Flask</span>
+                      <span class="px-2 py-1 text-xs font-medium text-green-300 bg-green-500/10 rounded-full transition-all duration-300 hover:bg-blue-500/20">JavaScript</span>
+                      <span class="px-2 py-1 text-xs font-medium text-purple-300 bg-purple-500/10 rounded-full transition-all duration-300 hover:bg-blue-500/20">SQLite</span>
+
+                  </div>
+              </div>
+      
+              <p class="text-gray-300 text-sm mb-6 transition-colors duration-300 group-hover:text-gray-200">
+                  A web application to save and view you and your friend's routes all over the world (offline).
+              </p>
+      
+              <div class="flex items-center justify-between">
+                  <div class="flex gap-4">
+                      <a href="https://github.com/FathanRaedaya/router" class="group/link flex items-center gap-2 text-gray-400 hover:text-white transition-all duration-300 hover:scale-105">
+                          <svg class="w-5 h-5 transition-colors duration-300 group-hover/link:text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+                              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                          </svg>
+                          <span class="text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-px after:bg-blue-400 after:transition-all after:duration-300">View Code</span>
+                      </a>
+                  </div>
+      
+                  <button id="routerLearnMoreBtn" class="group/btn flex items-center gap-2 text-white relative">
+                    <span class="text-sm font-medium relative 
+                          after:absolute after:bottom-0 after:left-0 
+                          after:w-0 after:h-px after:bg-white 
+                          after:transition-all after:duration-300 
+                          group-hover/btn:after:w-full">
+                          Learn more
+                      </span>
+                      <svg class="relative top-[3px]" aria-hidden="true" width="16" height="16" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="5 5 22 5 22 22" />
+                        <line x1="5" y1="22" x2="22" y2="5" />
+                      </svg>
+                  </button>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
-
-      
 
       <div id="budgetModalOverlay" class="font-montL modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
         <div class="modal-content w-full max-h-[95vh] sm:max-w-[90vw] md:max-w-[800px] lg:max-w-[1100px] relative mx-auto rounded-xl text-white bg-gradient-to-br from-[#0A1929] via-[#061325] to-black"> 
@@ -281,11 +343,8 @@
               <div>
                 <h3 class="text-lg sm:text-xl font-semibold mb-2">Key Features</h3>
                 <ul class="list-disc pl-4 sm:pl-6 space-y-1.5 text-gray-300">
-                  <li>Income and expense tracking</li>
+                  <li>Income, expense and balance tracking</li>
                   <li>Financial goal setting and progress monitoring</li>
-                  <li>Real-time budget calculations and balance tracking</li>
-                  <li>Duplicate entry prevention</li>
-                  <li>User feedback system with Flash messages</li>
                 </ul>
               </div>
       
@@ -492,10 +551,9 @@
               <div>
                 <h3 class="text-lg sm:text-xl font-semibold mb-2">Technical Highlights</h3>
                 <ul class="list-disc pl-4 sm:pl-6 space-y-1.5 text-gray-300">
-                  <li>Well-organized code structure using Flask framework</li>
+                  <li>Organised code structure using Flask framework</li>
                   <li>Efficient database management for storing and retrieving data</li>
                   <li>Clear separation between different parts of the application for better maintenance</li>
-                  <li>Smart database queries for quick calculation of totals and summaries</li>
                 </ul>
               </div>
       
@@ -529,7 +587,7 @@
             <div class="space-y-6 sm:space-y-8">
               <div>
                 <p class="text-base sm:text-lg">
-                  A MonkeyType-inspired typing test application built with vanilla JavaScript, HTML, and Tailwind CSS. 
+                  A typing test app built with JavaScript, HTML, and Tailwind CSS. 
                   This project showcases advanced DOM manipulation and real-time calculations while providing an 
                   intuitive interface for users to test and improve their typing speed.
                 </p>
@@ -768,7 +826,7 @@
       
               <div>
                 <h3 class="text-lg sm:text-xl font-semibold mb-3">Technology Stack</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
                     <span class="font-medium">Python/Flask</span>
                     <p class="text-sm text-gray-300">Backend Framework</p>
@@ -814,9 +872,86 @@
         </div>
       </div>
 
+      <div id="finalModalOverlay" class="font-montL modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
+        <div class="modal-content w-full max-h-[95vh] sm:max-w-[90vw] md:max-w-[800px] lg:max-w-[1100px] relative mx-auto rounded-xl text-white bg-gradient-to-br from-[#0A1929] via-[#061325] to-black"> 
+          <div class="p-4 sm:p-6 md:p-8 modal-scroll overflow-y-auto max-h-[85vh]">
+            <div class="flex justify-between items-center mb-6">
+              <h2 class="text-xl sm:text-2xl font-bold">University Module Portal</h2>
+              <button id="finalCloseModalBtn" class="p-1.5 hover:bg-gray-700 rounded-full transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+              </button>
+            </div>
+            
+
+            <div class="space-y-6 sm:space-y-8">
+              <div>
+                <p class="text-base sm:text-lg">
+                  I developed an improved version of the university's module system, 
+                  integrating recommender capabilities that suggest interface changes based on user preferences and behaviour. 
+                  Having built full-stack applications before meant I could focus primarily on developing the recommender system
+                </p>
+              </div>
+      
+              <div class="w-full max-w-2xl mx-auto rounded-lg overflow-hidden bg-gray-900">
+                <video class="w-full aspect-video object-cover" autoplay loop muted playsinline>
+                  <source src="src/assets/videos/uni.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+      
+              <div>
+                <h3 class="text-lg sm:text-xl font-semibold mb-2">Key Features</h3>
+                <ul class="list-disc pl-4 sm:pl-6 space-y-1.5 text-gray-300">
+                  <li>Interface recommedations based on user preferences and behaviour</li>
+                  <li>Keyboard/mouse and screen reading support</li>
+                  <li>Customisable interface (font, font size, line spacing, etc.)</li>
+                  <li>Course progression tracker</li>
+                </ul>
+              </div>
+      
+              <div>
+                <h3 class="text-lg sm:text-xl font-semibold mb-3">Technology Stack</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
+                    <span class="font-medium">React</span>
+                    <p class="text-sm text-gray-300">Frontend library</p>
+                  </div>
+                  <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
+                    <span class="font-medium">HTML/CSS</span>
+                    <p class="text-sm text-gray-300">Frontend</p>
+                  </div>
+                  <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
+                    <span class="font-medium">JavaScript</span>
+                    <p class="text-sm text-gray-300">Interactive Features</p>
+                  </div>
+                  <div class="p-3 sm:p-4 bg-gray-700 rounded-lg text-center">
+                    <span class="font-medium">SQLite</span>
+                    <p class="text-sm text-gray-300">Main Database</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div>
+                <h3 class="text-lg sm:text-xl font-semibold mb-2">Technical Highlights</h3>
+                <ul class="list-disc pl-4 sm:pl-6 space-y-1.5 text-gray-300">
+                  <li>Guards against breaking usability</li>
+                  <li>A single, consistent layer for handling API responses and errors</li>
+                  <li>Hybrid recommender system (content-based filtering and rule-based filtering)</li>
+                  <li>Three-tier state persistence architecture</li>
+                  <li>Research-based recommendation engine</li>
+                </ul>
+              </div>  
+      
+            </div>
+          </div>
+        </div>
+      </div>
+
       <section class="w-1/2 mx-auto relative flex flex-col md:flex-row justify-between items-center" id="contact">
         <p class="contact-text font-montM text-[9px] text-center text-white opacity-80 m-0 md:my-10 slide-in-left">
-          Designed and built by Fathan Raedaya © 2024
+          Built by Fathan Raedaya © 2025
         </p>
         <div class="home-icon slide-in-right flex justify-center items-center m-5 md:my-10">
           <a href="https://www.linkedin.com/in/fathan-raedaya/" target="_blank" rel="noopener noreferrer" class="mx-0 md:mx-2.5 opacity-0 invisible transition-opacity duration-1000">
