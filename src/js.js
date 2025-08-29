@@ -30,11 +30,11 @@ window.addEventListener('DOMContentLoaded', ()=>{
 					span.classList.add('out');
 				}, (idx + 1) * 10)
 			})
-		}, 1500);
+		}, 1250);
 
 		setTimeout(()=>{
 			introduction.style.top = '-100vh';
-		}, 1500)
+		}, 1250)
 	})
 })
 
@@ -55,7 +55,7 @@ window.addEventListener('load', function() {
 	  navbar.addEventListener('mouseout', function() {
 		navbar.style.opacity = '0.7';
 	  });
-	}, 1500); 
+	}, 1700); 
 });
 
 window.addEventListener('load', function() {
@@ -66,7 +66,7 @@ window.addEventListener('load', function() {
         icon.style.visibility = 'visible';  
         icon.style.opacity = '1';          
       });
-    }, 1500); 
+    }, 1400); 
 });
 
 window.addEventListener('load', function() {
@@ -80,7 +80,7 @@ window.addEventListener('load', function() {
         homeDescription.classList.add('fade-in');
       }, 0);
       
-    }, 1500); 
+    }, 1400); 
 });
 
 
