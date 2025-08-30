@@ -1508,6 +1508,12 @@ video {
   src: url(assets/fonts/montM.ttf);
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+       text-size-adjust: 100%;
+}
+
 .opacity:hover {
   opacity: 0.5;
   transition: ease-in 0.3s;
