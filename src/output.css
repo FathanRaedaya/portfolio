@@ -1255,12 +1255,12 @@ video {
   font-size: 40px;
 }
 
-.text-\[500\%\] {
-  font-size: 500%;
+.text-\[44px\] {
+  font-size: 44px;
 }
 
-.text-\[60px\] {
-  font-size: 60px;
+.text-\[500\%\] {
+  font-size: 500%;
 }
 
 .text-\[9px\] {
@@ -1290,14 +1290,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[36px\] {
-  font-size: 36px;
-}
-
-.text-\[44px\] {
-  font-size: 44px;
 }
 
 .font-bold {
@@ -2055,14 +2047,13 @@ video {
     line-height: 2rem;
   }
 
+  .sm\:text-\[60px\] {
+    font-size: 60px;
+  }
+
   .sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .sm\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 
   .sm\:text-xl {
@@ -2112,10 +2103,6 @@ video {
 
   .md\:text-\[40px\] {
     font-size: 40px;
-  }
-
-  .md\:text-\[60px\] {
-    font-size: 60px;
   }
 }
 
