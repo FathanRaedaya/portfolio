@@ -624,8 +624,8 @@ video {
   bottom: -20px;
 }
 
-.bottom-36 {
-  bottom: 9rem;
+.bottom-48 {
+  bottom: 12rem;
 }
 
 .left-0 {
@@ -650,6 +650,10 @@ video {
 
 .top-\[3px\] {
   top: 3px;
+}
+
+.bottom-60 {
+  bottom: 15rem;
 }
 
 .z-50 {
@@ -2047,6 +2051,10 @@ html {
 }
 
 @media (min-width: 768px) {
+  .md\:bottom-36 {
+    bottom: 9rem;
+  }
+
   .md\:mx-2\.5 {
     margin-left: 0.625rem;
     margin-right: 0.625rem;
