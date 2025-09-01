@@ -7,94 +7,68 @@
     <title>fnr</title>
     <link rel="icon" type="image/svg+xml" href="./src/assets/images/icon.svg">
 </head>
-<body class="min-h-screen bg-gradient-to-br from-black via-slate-900 to-zinc-900 text-white font-sans antialiased">
+<body class="min-h-screen bg-gradient-to-br from-black via-slate-900 to-zinc-900 text-white font-[merri] antialiased">
 
     <div class="fixed inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
 
     <header>
-      <nav id="navbar" class="fixed top-0 left-0 right-0 transition-opacity duration-1000 ease-linear w-full px-4 z-[1000] font-mont text-[12px] opacity-0 invisible mt-6">
-        <div class="container max-w-screen-xl mx-auto">
-          <ul class="list-none p-0 m-0 flex flex-row justify-center items-center flex-wrap gap-2 sm:gap-8">
+      <nav id="navbar" 
+           class="top-0 left-0 right-0 transition-opacity duration-1000 ease-linear 
+                  w-2/3 mx-auto z-[1000] font-[merri] opacity-0 invisible mt-6 text-white">
+        
+        <div class="flex items-center justify-between">
+          
+          <a href="#home" class="font-[merri] text-white text-[20px]">fathan raedaya</a>
+    
+          <ul class="hidden md:flex list-none p-0 m-0 flex-row gap-2 sm:gap-8 text-[14px]">
             <li>
-              <a href="#home" 
-                class="no-underline text-white py-2 px-5 transition duration-300 hover:text-gray-300">
-                Home
-              </a>
+              <a href="#about" class="no-underline text-white py-2 px-5 transition duration-300 hover:text-gray-300">about</a>
             </li>
             <li>
-              <a href="#about" 
-                class="no-underline text-white py-2 px-5 transition duration-300 hover:text-gray-300">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#projects" 
-                class="no-underline text-white py-2 px-5 transition duration-300 hover:text-gray-300">
-                Projects
-              </a>
+              <a href="#projects" class="no-underline text-white py-2 px-5 transition duration-300 hover:text-gray-300">projects</a>
             </li>
           </ul>
+    
+          <button id="menu-btn" class="md:hidden flex items-center px-3 py-2 rounded text-white hover:text-gray-300 hover:border-gray-300">
+            <svg class="fill-current h-6 w-6" viewBox="0 0 20 20">
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+            </svg>
+          </button>
         </div>
+    
+        <div id="mobile-menu" 
+             class="overflow-hidden max-h-0 transition-all duration-500 ease-in-out md:hidden flex flex-col mt-2 space-y-2 text-[14px]">
+          <a href="#about" class="no-underline text-white py-2 hover:text-gray-300">about</a>
+          <a href="#projects" class="no-underline text-white py-2 hover:text-gray-300">projects</a>
+        </div>
+    
       </nav>
     </header>
-    
-    <main class="relative w-full min-h-screen overflow-x-hidden">
+   
+    <main class="relative w-full overflow-x-hidden">
       <section class="introduction fixed z-[100] top-0 left-0 w-full h-screen bg-gradient-to-t from-black/20 to-transparent transition-all duration-1000">            
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full px-4">
-          <h1 class="intro-text font-mont text-white text-[500%] tracking-[-5px] flex justify-center flex-wrap">
-            <span class="loading relative inline-block -bottom-[20px] opacity-0 p-2.5">Hello</span>
-            <span class="loading relative inline-block -bottom-[20px] opacity-0 p-2.5">World!</span>
+          <h1 class="intro-text font-[merri] text-white text-[500%] tracking-[-5px] flex justify-center flex-wrap">
+            <span class="loading relative inline-block -bottom-[20px] opacity-0 p-2.5">hello</span>
+            <span class="loading relative inline-block -bottom-[20px] opacity-0 p-2.5">world!</span>
           </h1>
         </div>
       </section>
     
-      <section class="min-h-screen w-full flex flex-col justify-center items-center text-center px-4" id="home">
-        <div class="container max-w-4xl mx-auto px-4 home-text">
-          <h2 class="font-it sm:text-[60px] text-[44px] font-bold text-white mb-2 welcome whitespace-nowrap">
-            Hey, I'm<span class="text-[#99aab5]"> Fathan</span>  
-          </h2>
-          
-          <p class="font-[montM] text-[15px] text-white max-w-2xl mx-auto mb-4 px-4">
-            Mastering CS @ Uni of Leeds | BSc Computer Science Graduate
-          </p>
-          
-          <div class="w-full flex justify-center items-center">
-            <div class="home-icon flex justify-center items-center gap-5 px-4">
-              <a href="https://www.linkedin.com/in/fathan-raedaya/" 
-                 target="_blank" 
-                 rel="noopener noreferrer" 
-                 class="opacity-0 invisible transition-opacity duration-1000 w-8 h-8 flex items-center justify-center">
-                <img src="src/assets/images/linkedin.svg" alt="LinkedIn Icon" class="fadeout w-full h-full object-contain">
-              </a>
-              <a href="https://github.com/FathanRaedaya" 
-                 target="_blank" 
-                 rel="noopener noreferrer" 
-                 class="opacity-0 invisible transition-opacity duration-1000 w-8 h-8 flex items-center justify-center">
-                <img src="src/assets/images/github.svg" alt="GitHub Icon" class="fadeout w-full h-full object-contain">
-              </a>
-              <a href="mailto:edu.fathan@gmail.com" 
-                 class="opacity-0 invisible transition-opacity duration-1000 w-8 h-8 flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fadeout w-full h-full object-contain">
-                  <path
-                    fill="white"
-                    d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
-                  />
-                </svg>
-              </a>
-            </div>
+      <section class="min-h-screen w-full flex flex-col relative" id="home">
+        <div class="container min-h-screen w-2/3 mx-auto px-4 home-text relative">
+          <div class="absolute bottom-36 left-0">
+            <h2 class="w-full sm:w-2/3 left-0 font-[merri] text-[28px] md:text-[40px] text-white mr-[10]">
+              hey, i'm<span class="text-[#99aab5]"> fathan</span>. 
+              <span class="opacity-75">i'm a computer science graduate and currently mastering cs @ uni of leeds.</span>
+            </h2>             
           </div>
         </div>
       </section>
 
-      <div id="scroll-arrow" class="scroll-arrow fixed bottom-[30px] left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer z-[100] opacity-100 transition-opacity duration-500 ease-in-out text-white">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
-              <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-      </div>
-
-      <section class="about-container h-[50vh] w-1/2 mx-auto relative" id="about">
-          <h2 class="about-heading font-it text-[40px] text-white text-left pt-[10%] tracking-[-2px] font-normal slide-in-left"><span class="small">01 </span><span class="text-customGrey">about </span>me</h2>
-          <img src="src/assets/images/pfp.jpg" alt="Fathan Raedaya picture" class="portrait max-w-[300px] max-h-[300px] rounded-[30px] float-right ml-5 mt-5 slide-in-right">
+      <section class="about-container h-[50vh] w-2/3 mx-auto relative" id="about">
+          <h2 class="about-heading font-[merri] text-[40px] text-white text-left pt-[10%] tracking-[-2px] font-normal slide-in-left"><span class="small">01 </span><span class="text-customGrey">about </span>me</h2>
+          <img src="src/assets/images/pfp.jpg" alt="Fathan Raedaya picture" class="portrait max-w-[300px] max-h-[300px] rounded-[30px] float-right slide-in-right">
           <p class="about-text slide-in-left">
                 I'm a computer science graduate from the <span class="text-customGrey">University of Leeds</span>, currently pursuing my MSc in Advanced Computer Science.<br><br>
                 I'm passionate about designing and developing software applications and websites, which is why I chose a final year project focused on improving
@@ -113,8 +87,8 @@
           </p>
       </section>
 
-      <section id="projects" class="projects-container w-full max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h2 class="projects-heading font-it text-[40px] md:text-[40px] text-white text-center md:text-right pt-8 md:pt-12 tracking-[-2px] font-normal">
+      <section id="projects" class="projects-container w-2/3 mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 class="projects-heading font-[merri] text-[40px] md:text-[40px] text-white text-center md:text-right pt-8 md:pt-12 tracking-[-2px] font-normal">
             <span class="text-gray-400"><span class="small">02 </span></span>my <span class="text-customGrey">projects</span>
         </h2>
         
@@ -312,7 +286,7 @@
         </div>
       </section>
 
-      <div id="budgetModalOverlay" class="font-montL modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
+      <div id="budgetModalOverlay" class="font-[merri] modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
         <div class="modal-content w-full max-h-[95vh] sm:max-w-[90vw] md:max-w-[800px] lg:max-w-[1100px] relative mx-auto rounded-xl text-white bg-gradient-to-br from-[#0A1929] via-[#061325] to-black"> 
           <div class="p-4 sm:p-6 md:p-8 modal-scroll overflow-y-auto max-h-[85vh]">
             <div class="flex justify-between items-center mb-6">
@@ -571,7 +545,7 @@
         </div>
       </div>
 
-      <div id="typingModalOverlay" class="font-montL modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
+      <div id="typingModalOverlay" class="font-[merri] modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
         <div class="modal-content w-full max-h-[95vh] sm:max-w-[90vw] md:max-w-[800px] lg:max-w-[1100px] relative mx-auto rounded-xl text-white bg-gradient-to-br from-[#0A1929] via-[#061325] to-black"> 
           <div class="p-4 sm:p-6 md:p-8 modal-scroll overflow-y-auto max-h-[85vh]">
             <div class="flex justify-between items-center mb-6">
@@ -738,7 +712,7 @@
         </div>
       </div>
 
-      <div id="routerModalOverlay" class="font-montL modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
+      <div id="routerModalOverlay" class="font-[merri] modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
         <div class="modal-content w-full max-h-[95vh] sm:max-w-[90vw] md:max-w-[800px] lg:max-w-[1100px] relative mx-auto rounded-xl text-white bg-gradient-to-br from-[#0A1929] via-[#061325] to-black"> 
           <div class="p-4 sm:p-6 md:p-8 modal-scroll overflow-y-auto max-h-[85vh]">
             <div class="flex justify-between items-center mb-6">
@@ -872,7 +846,7 @@
         </div>
       </div>
 
-      <div id="finalModalOverlay" class="font-montL modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
+      <div id="finalModalOverlay" class="font-[merri] modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 overflow-y-auto">
         <div class="modal-content w-full max-h-[95vh] sm:max-w-[90vw] md:max-w-[800px] lg:max-w-[1100px] relative mx-auto rounded-xl text-white bg-gradient-to-br from-[#0A1929] via-[#061325] to-black"> 
           <div class="p-4 sm:p-6 md:p-8 modal-scroll overflow-y-auto max-h-[85vh]">
             <div class="flex justify-between items-center mb-6">
@@ -950,7 +924,7 @@
       </div>
 
       <section class="w-1/2 mx-auto relative flex flex-col md:flex-row justify-between items-center" id="contact">
-        <p class="contact-text font-montM text-[9px] text-center text-white opacity-80 m-0 md:my-10 slide-in-left">
+        <p class="contact-text font-[merri] text-[9px] text-center text-white opacity-80 m-0 md:my-10 slide-in-left">
           Built by Fathan Raedaya © 2025
         </p>
         <div class="home-icon slide-in-right flex justify-center items-center m-5 md:my-10">

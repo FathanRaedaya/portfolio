@@ -60,26 +60,8 @@ window.addEventListener('load', function() {
 
 window.addEventListener('load', function() {
     setTimeout(function() {
-      const homeIcons = document.querySelectorAll('.home-icon a'); 
-
-      homeIcons.forEach(function(icon) {
-        icon.style.visibility = 'visible';  
-        icon.style.opacity = '1';          
-      });
-    }, 1400); 
-});
-
-window.addEventListener('load', function() {
-    setTimeout(function() {
-      const homeTitle = document.querySelector('.home-text h2');
-      const homeDescription = document.querySelector('.home-text p');
-      
+      const homeTitle = document.querySelector('.home-text h2');      
       homeTitle.classList.add('fade-in');
-      
-      setTimeout(function() {
-        homeDescription.classList.add('fade-in');
-      }, 0);
-      
     }, 1400); 
 });
 
@@ -150,6 +132,17 @@ window.addEventListener('load', function() {
             behavior: 'smooth'
         });
     });
+});
+
+window.addEventListener('load', function() {
+    setTimeout(function() {
+      const homeIcons = document.querySelectorAll('.home-icon a'); 
+
+      homeIcons.forEach(function(icon) {
+        icon.style.visibility = 'visible';  
+        icon.style.opacity = '1';          
+      });
+    }, 1400); 
 });
 
 function toggleNavbarVisibility(hide) {
@@ -328,5 +321,18 @@ setTimeout(function() {
     const homeSection = document.getElementById('home');
     homeSection.classList.add('active');
     
-}, 2200); 
+}, 1400); 
+});
+
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuBtn.addEventListener("click", () => {
+  if (mobileMenu.classList.contains("max-h-0")) {
+    mobileMenu.classList.remove("max-h-0");
+    mobileMenu.classList.add("max-h-96");
+  } else {
+    mobileMenu.classList.add("max-h-0"); 
+    mobileMenu.classList.remove("max-h-96");
+  }
 });

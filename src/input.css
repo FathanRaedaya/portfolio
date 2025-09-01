@@ -44,6 +44,16 @@
 	src: url(assets/fonts/montM.ttf);
 }
 
+@font-face {
+	font-family: 'inter';
+	src: url(assets/fonts/InterTight.ttf);
+}
+
+@font-face {
+	font-family: 'merri';
+	src: url(assets/fonts/Merriweather.ttf);
+}
+
 html {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
@@ -55,8 +65,7 @@ html {
 	transition: ease-in 0.3s;
 }
 
-.home-text h2,
-.home-text p {
+.home-text h2 {
   opacity: 0;
   visibility: hidden;
   transform: translateY(20px);
@@ -114,7 +123,7 @@ html {
 }
 
 .about-text {
-	font-family: montL, arial;
+	font-family: merri, montL, arial;
 	font-size: 16px;
 	color: white;
 	max-width: 60%;
@@ -127,7 +136,11 @@ html {
 .small {
 	font-size: 18px;
 	letter-spacing: .3px;
-	font-family: montL, arial;
+	font-family: merri, montL, arial;
+}
+
+.intro-text {
+	letter-spacing: .5px;
 }
 
 @media (max-width: 1440px) {
@@ -140,15 +153,6 @@ html {
     .about-heading {
         padding-top: 5%;
     }
-
-	#home {
-		align-items: center;
-		text-align: center;
-	}
-
-	#home p {
-		font-size: 12px;
-	}
 
 	.projects-container {
         width: 80%;
@@ -274,11 +278,6 @@ html {
         font-size: 0.75rem;
         padding: 0.25rem 0.5rem;
     }
-
-	.welcome {
-		letter-spacing: -2px;
-	}
-
 }
 
 
