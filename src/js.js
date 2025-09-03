@@ -12,30 +12,30 @@ const loading = document.querySelector('.intro-text');
 const loadingSpan = document.querySelectorAll('.loading');
 
 window.addEventListener('DOMContentLoaded', ()=>{
+    if (!window.location.hash) {
+        setTimeout(()=>{
+            loadingSpan.forEach((span, idx)=>{
+                setTimeout(()=>{
+                    span.classList.add('in');
+                }, (idx + 1) * 200)
+            });
 
-	setTimeout(()=>{
+            setTimeout(()=>{
+                loadingSpan.forEach((span, idx)=>{
+                    setTimeout(()=>{
+                        span.classList.remove('in');
+                        span.classList.add('out');
+                    }, (idx + 1) * 10)
+                })
+            }, 1250);
 
-		loadingSpan.forEach((span, idx)=>{
-
-			setTimeout(()=>{
-				span.classList.add('in');
-			}, (idx + 1) * 200)
-		});
-
-		setTimeout(()=>{
-			loadingSpan.forEach((span, idx)=>{
-
-				setTimeout(()=>{
-					span.classList.remove('in');
-					span.classList.add('out');
-				}, (idx + 1) * 10)
-			})
-		}, 1250);
-
-		setTimeout(()=>{
-			introduction.style.top = '-100vh';
-		}, 1250)
-	})
+            setTimeout(()=>{
+                introduction.style.top = '-100vh';
+            }, 1250)
+        })
+    } else {
+        introduction.style.top = '-100vh';
+    }
 })
 
 $(document).ready(function(){
@@ -195,7 +195,7 @@ function closeModal(modalOverlay) {
 if (budgetLearnMoreBtn) {
     budgetLearnMoreBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        openModal(budgetModalOverlay);
+        window.location.href = "src/projects.html?id=3"
     });
 }
 
@@ -214,7 +214,7 @@ if (budgetModalOverlay) {
 if (typingLearnMoreBtn) {
     typingLearnMoreBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        openModal(typingModalOverlay);
+        window.location.href = "src/projects.html?id=1"
     });
 }
 
@@ -233,7 +233,7 @@ if (typingModalOverlay) {
 if (routerLearnMoreBtn) {
     routerLearnMoreBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        openModal(routerModalOverlay);
+        window.location.href = "src/projects.html?id=4"
     });
 }
 
@@ -252,7 +252,7 @@ if (routerModalOverlay) {
 if (finalLearnMoreBtn) {
     finalLearnMoreBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        openModal(finalModalOverlay);
+        window.location.href = "src/projects.html?id=2"
     });
 }
 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="overflow-x-hidden overflow-y-scroll scroll-smooth" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link href="./output.css" rel="stylesheet">
+    <title>Router</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/images/icon.svg">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-black via-slate-900 to-zinc-900 text-white font-[merri] antialiased">
+    <header>
+        <nav id="navbar" 
+             class="top-0 left-0 right-0 transition-opacity duration-1000 ease-linear 
+                    w-4/5 mx-auto z-[1000] font-[merri] opacity-0 invisible mt-6 text-white">
+          
+          <div class="flex items-center justify-between">
+            
+            <a href="../index.html" class="font-[merri] text-white text-[20px]">fathan raedaya</a>
+      
+            <ul class="hidden md:flex list-none p-0 m-0 flex-row gap-2 sm:gap-8 text-[14px]">
+              <li>
+                <a href="../index.html#about" class="no-underline text-white py-2 px-5 transition duration-300 hover:text-gray-300">about</a>
+              </li>
+              <li>
+                <a href="../index.html#projects" class="no-underline text-white py-2 px-5 transition duration-300 hover:text-gray-300">projects</a>
+              </li>
+            </ul>
+      
+            <button id="menu-btn" class="md:hidden flex items-center px-3 py-2 rounded text-white hover:text-gray-300 hover:border-gray-300">
+              <svg class="fill-current h-6 w-6" viewBox="0 0 20 20">
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+              </svg>
+            </button>
+          </div>
+      
+          <div id="mobile-menu" 
+               class="overflow-hidden max-h-0 transition-all duration-500 ease-in-out md:hidden flex flex-col mt-2 space-y-2 text-[14px]">
+            <a href="#about" class="no-underline text-white py-2 hover:text-gray-300">about</a>
+            <a href="#projects" class="no-underline text-white py-2 hover:text-gray-300">projects</a>
+          </div>
+      
+        </nav>
+    </header>
+
+    <main id="project-container" class="max-w-4xl mx-auto">
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+    <script src="js.js"></script>
+    <script src="projects.js"></script>
+</body>
+</html>
